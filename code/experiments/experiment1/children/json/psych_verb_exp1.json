@@ -1,0 +1,922 @@
+{
+    "frames": {
+        "exit-survey": {
+            "kind": "exp-lookit-exit-survey",
+            "debriefing": {
+                "title": "Thank you!",
+                "text": "Thank you again for participating in our study."
+            }
+        },
+        "start-recording-with-image": {
+            "kind": "exp-lookit-start-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "image": "peekaboo_remy.jpg",
+            "imageAnimation": "spin",
+            "displayFullscreen": true
+        },
+        "stop-recording-with-video": {
+            "kind": "exp-lookit-stop-recording",
+            "baseDir": "https://www.mit.edu/~kimscott/placeholderstimuli/",
+            "videoTypes": [
+                "webm",
+                "mp4"
+            ],
+            "video": "attentiongrabber",
+            "displayFullscreen": true,
+            "showProgressBar": true,
+            "waitForUploadMessage": " "
+        },
+        "instructions": {
+            "kind": "exp-lookit-instructions",
+            "blocks": [
+                {
+                    "title": "1. Overview",
+                    "listblocks": [
+                        {
+                            "text": "All together, it will take about 5-8 minutes to finish this study."
+                        },
+                        {
+                            "text": "Your child will watch short videos and answer questions by choosing pictures on the screen."
+                        },
+                        {
+                            "text": "There are no right or wrong answers."
+                        }
+                    ]
+                }
+            ],
+            "showWebcam": true,
+            "nextButtonText": "Next"
+        },
+        "video-config": {
+            "kind": "exp-video-config"
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "template": "consent_005",
+            "PIName": "Lookit Tutorial Participant",
+            "PIContact": "Ellen Markman at markman@stanford.edu",
+            "include_databrary": true,
+            "risk_statement": "There are no expected risks to participation.",
+            "datause": "A research assistant will watch your video and mark down your child's answers as well as other information such as interactions between you and your child during the study.",
+            "payment": "Please refer to the study listing for payment details.",
+            "purpose": "This study is about how children understand causal and psychological verbs.",
+            "procedures": "In this study your child will watch short scenarios and answer questions by selecting pictures on the screen.",
+            "institution": "The Markman Lab of Stanford University"
+        },
+        "introduction": {
+            "kind": "exp-lookit-video",
+            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+            "id": "storybook-group",
+            "videoTypes": [
+                "mp4"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "css": {
+                    "font-size": "1.5em"
+                },
+                "text": "Please help keep your child's attention, but don't tell them which answer to choose.",
+                "title": "For parents"
+            },
+            "video": {
+                "source": "overall_study_intro",
+                "top": 0,
+                "left": 0,
+                "width": 120,
+                "loop": false
+            }
+        },
+        "end": {
+            "kind": "exp-lookit-video",
+            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+            "id": "storybook-group",
+            "videoTypes": [
+                "mp4"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "displayFullscreen": true,
+            "video": {
+                "source": "overall_study_end",
+                "top": 0,
+                "left": 0,
+                "width": 120,
+                "loop": false
+            }
+        },
+        "warmup": {
+            "kind": "group",
+            "frameList": [
+                {
+                    "kind": "group",
+                    "frameList": [
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "warmup_part1_bird_question",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "bird.png",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "cat.png",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "warmup_part2_fish_question",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "pig.png",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "fish.png",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "warmup_finish",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "psych-verb-exp1": {
+            "kind": "group",
+            "parameters": {
+                "CANDS": [
+                    [
+                        "drum_scenario",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "balloon_scenario",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png"
+                    ],
+                    [
+                        "drum_scenario",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "balloon_scenario",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png"
+                    ],
+                    [
+                        "drum_scenario",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "balloon_scenario",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png"
+                    ],
+                    [
+                        "drum_scenario",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "balloon_scenario",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png"
+                    ],
+                    [
+                        "balloon_scenario",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "drum_scenario",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png"
+                    ],
+                    [
+                        "balloon_scenario",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "drum_scenario",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png"
+                    ],
+                    [
+                        "balloon_scenario",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "drum_scenario",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png"
+                    ],
+                    [
+                        "balloon_scenario",
+                        "balloon_sad_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_sad_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_lexical",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "balloon_pop_caused",
+                        "balloon_distal.png",
+                        "balloon_proximal.png",
+                        "drum_scenario",
+                        "drum_angry_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_angry_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_lexical",
+                        "drum_distal.png",
+                        "drum_proximal.png",
+                        "drum_break_caused",
+                        "drum_distal.png",
+                        "drum_proximal.png"
+                    ]
+                ]
+            },
+            "frameList": [
+                {
+                    "kind": "group",
+                    "parameters": {
+                        "TRIAL_DISPLAYED": "CANDS#UNIQ"
+                    },
+                    "frameList": [
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "test_case_intro",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#0",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#1",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#2",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#3",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#4",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#5",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#6",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#7",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#8",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#9",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#10",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#11",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#12",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "test_case_intro",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#13",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#14",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#15",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#16",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#17",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#18",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#19",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#20",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#21",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#22",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        },
+                        {
+                            "kind": "exp-lookit-video",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "videoTypes": [
+                                "mp4"
+                            ],
+                            "autoProceed": true,
+                            "doRecording": false,
+                            "video": {
+                                "source": "TRIAL_DISPLAYED#23",
+                                "top": 0,
+                                "left": 0,
+                                "width": 120,
+                                "loop": false
+                            },
+                            "parentTextBlock": {
+                                "title": "For parents",
+                                "text": "Let your child choose the answer they think is best.",
+                                "css": {
+                                    "font-size": "1.3em"
+                                }
+                            }
+                        },
+                        {
+                            "kind": "exp-lookit-images-audio",
+                            "baseDir": "https://raw.githubusercontent.com/CSLouise/lookit_material/master/children_pilot1_psych_verb_exp1/",
+                            "images": [
+                                {
+                                    "id": "distal",
+                                    "src": "TRIAL_DISPLAYED#24",
+                                    "left": 5,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                },
+                                {
+                                    "id": "proximal",
+                                    "src": "TRIAL_DISPLAYED#25",
+                                    "left": 55,
+                                    "top": 20,
+                                    "width": 40,
+                                    "height": 60
+                                }
+                            ],
+                            "autoProceed": true,
+                            "choiceRequired": true,
+                            "doRecording": false
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "sequence": [
+        "instructions",
+        "video-config",
+        "video-consent",
+        "start-recording-with-image",
+        "introduction",
+        "warmup",
+        "psych-verb-exp1",
+        "end",
+        "stop-recording-with-video",
+        "exit-survey"
+    ]
+}
