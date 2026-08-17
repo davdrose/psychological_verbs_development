@@ -1023,10 +1023,6 @@ exp1,AG2BXS,control,balloon,pop,cause,proximal,0,1,3390,9.28,9,m
 exp1,AG2BXS,control,balloon,pop,lexical,proximal,0,1,3390,9.28,9,m
 exp1,AG2BXS,control,drum,break,cause,proximal,0,1,3390,9.28,9,m
 exp1,AG2BXS,control,drum,break,lexical,proximal,0,1,3390,9.28,9,m
-exp1,DXGWRX,control,drum,break,cause,distal,1,0,3660,10.02,10,m
-exp1,DXGWRX,control,drum,break,lexical,proximal,0,1,3660,10.02,10,m
-exp1,DXGWRX,control,balloon,pop,cause,distal,1,0,3660,10.02,10,m
-exp1,DXGWRX,control,balloon,pop,lexical,proximal,0,1,3660,10.02,10,m
 exp1,Q4SJJN,experimental,drum,angry,lexical,proximal,0,1,3120,8.54,8,m
 exp1,Q4SJJN,experimental,drum,angry,cause,distal,1,0,3120,8.54,8,m
 exp1,Q4SJJN,experimental,balloon,sad,lexical,distal,1,0,3120,8.54,8,m

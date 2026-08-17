@@ -14,7 +14,8 @@ has an **adults** version (jsPsych / Proliferate) and a **children** version
 
 Both `*_clean.csv` files are **long** (one row per participant × scenario ×
 question) with the response coded `distal` / `proximal` (0/1). The child files
-additionally carry `age_days`, `age_years`, `age_group`, and `gender`.
+additionally carry `age_days`, `age_years`, `age_group`, and `gender`; children
+outside the target **3–9** age range are excluded.
 
 ## Privacy — raw children exports are NOT committed
 
@@ -35,9 +36,9 @@ committed. Keep the raw JSONs locally to be able to re-run `parse_children.py`.
 - **exp2** — absence scenarios; **between-subjects** `physical` / `mental`; scenarios
   `hurt` / `shock`. Adults: 3 duplicate `workerid` submissions (`1122, 1134, 1185`)
   are removed keeping each participant's first submission.
-- **exp3** — single condition; scenarios `scared` / `surprised` (the second scenario
-  is labelled `excited` in the adult export — the same scenario under a different name;
-  the figures collapse across scenarios).
+- **exp3** — single condition; scenarios `scared` / `surprised`. The adult export
+  labels the second scenario `excited`; `clean_exp3.py` relabels it `surprised` to
+  match the children data (same scenario).
 
 To regenerate: `python code/python/clean_exp{1,2,3}.py` (adults) and
 `python code/python/parse_children.py` (children).

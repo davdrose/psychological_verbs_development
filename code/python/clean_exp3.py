@@ -27,7 +27,9 @@ REPO = Path(__file__).resolve().parents[2]
 RAW_DIR = REPO / "data" / "exp3"
 OUT_FILE = REPO / "data" / "exp3_adult_clean.csv"
 
+# response columns use "excited"; relabel it "surprised" to match the children data
 SCENARIOS = ["excited", "scared"]
+SCENARIO_LABEL = {"excited": "surprised", "scared": "scared"}
 QUESTIONS = ["cause", "lexical"]
 
 
@@ -78,7 +80,7 @@ def main():
                     "workerid": wid,
                     "participant_id": pid.loc[wid, "participant_id"] if wid in pid.index else "",
                     "condition": cond,
-                    "scenario": scenario,
+                    "scenario": SCENARIO_LABEL[scenario],
                     "question": question,
                     "response": resp,
                     "distal": distal,

@@ -85,7 +85,7 @@ def child_condition(exp, per_child_conditions):
 def parse_experiment(exp):
     data = json.loads((DATA / FILES[exp]).read_text(encoding="utf-8"))
     out_rows = []
-    n_completed = n_excluded_both = 0
+    n_completed = n_excluded_both = n_excluded_age = 0
 
     for entry in data:
         resp = entry.get("response", {})
@@ -121,6 +121,11 @@ def parse_experiment(exp):
             n_excluded_both += 1
             continue
 
+        # keep only the target age range (3-9 years)
+        if age_group == "" or age_group < 3 or age_group > 9:
+            n_excluded_age += 1
+            continue
+
         for scenario, verb, question, label in trials:
             distal = 1 if label == "distal" else 0 if label == "proximal" else ""
             proximal = 1 if label == "proximal" else 0 if label == "distal" else ""
@@ -148,7 +153,8 @@ def parse_experiment(exp):
 
     n_kept = len({r["child_id"] for r in out_rows})
     print(f"{exp}: {out_file.name}  ({n_kept} children, {len(out_rows)} rows; "
-          f"completed={n_completed}, excluded 'both'={n_excluded_both})")
+          f"completed={n_completed}, excluded 'both'={n_excluded_both}, "
+          f"excluded age<3/>9={n_excluded_age})")
 
 
 def main():

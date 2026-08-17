@@ -543,10 +543,6 @@ exp2,DKRESD,physical,hurt,,cause,proximal,0,1,1920,5.26,5,f
 exp2,DKRESD,physical,hurt,,lexical,proximal,0,1,1920,5.26,5,f
 exp2,DKRESD,physical,shock,,cause,proximal,0,1,1920,5.26,5,f
 exp2,DKRESD,physical,shock,,lexical,proximal,0,1,1920,5.26,5,f
-exp2,SCWSBK,physical,shock,,cause,distal,1,0,3660,10.02,10,f
-exp2,SCWSBK,physical,shock,,lexical,distal,1,0,3660,10.02,10,f
-exp2,SCWSBK,physical,hurt,,cause,distal,1,0,3660,10.02,10,f
-exp2,SCWSBK,physical,hurt,,lexical,distal,1,0,3660,10.02,10,f
 exp2,A4YREK,mental,hurt,,cause,distal,1,0,1860,5.09,5,f
 exp2,A4YREK,mental,hurt,,lexical,proximal,0,1,1860,5.09,5,f
 exp2,A4YREK,mental,shock,,cause,distal,1,0,1860,5.09,5,f
@@ -1023,10 +1019,6 @@ exp2,Qc7JKG,mental,shock,,cause,proximal,0,1,3240,8.87,8,f
 exp2,Qc7JKG,mental,shock,,lexical,distal,1,0,3240,8.87,8,f
 exp2,Qc7JKG,mental,hurt,,cause,proximal,0,1,3240,8.87,8,f
 exp2,Qc7JKG,mental,hurt,,lexical,distal,1,0,3240,8.87,8,f
-exp2,JT777M,physical,shock,,cause,distal,1,0,3660,10.02,10,m
-exp2,JT777M,physical,shock,,lexical,proximal,0,1,3660,10.02,10,m
-exp2,JT777M,physical,hurt,,cause,distal,1,0,3660,10.02,10,m
-exp2,JT777M,physical,hurt,,lexical,proximal,0,1,3660,10.02,10,m
 exp2,VET65A,physical,shock,,cause,distal,1,0,3450,9.45,9,f
 exp2,VET65A,physical,shock,,lexical,proximal,0,1,3450,9.45,9,f
 exp2,VET65A,physical,hurt,,cause,distal,1,0,3450,9.45,9,f
