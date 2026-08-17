@@ -21,9 +21,11 @@ Parses the three Lookit / CHS response exports into anonymized long-format
 `data/expN_child_clean.csv` (adds `age_days`, `age_years`, `age_group`, `gender`).
 
 - Choice images are always (left = distal, right = proximal), so `response` 0 → distal.
-- Only completed, non-preview sessions are kept; condition is inferred per child
-  (exp1: causal vs. psych verbs; exp2: physical vs. mental). exp1 children who saw
-  all four verbs are excluded.
+- A session is kept if the child **answered all test questions** (Lookit's `completed`
+  flag is not used — it is often False even when every question was answered);
+  duplicate children are de-duplicated (keep first).
+- Condition is inferred per child (exp1: causal vs. psych verbs; exp2: physical vs.
+  mental); exp1 children who saw all four verbs are excluded.
 - **Only de-identified fields are written** — no names, birthdates, or test dates.
   The raw `*identifiable*.json` inputs are git-ignored; keep them locally to re-run.
 

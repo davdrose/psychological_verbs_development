@@ -85,14 +85,18 @@ def child_condition(exp, per_child_conditions):
 def parse_experiment(exp):
     data = json.loads((DATA / FILES[exp]).read_text(encoding="utf-8"))
     out_rows = []
-    n_completed = n_excluded_both = n_excluded_age = 0
+    n_sessions = n_incomplete = n_excluded_both = n_excluded_age = n_dup = 0
+    seen = set()
 
     for entry in data:
         resp = entry.get("response", {})
         child = entry.get("child", {})
-        if resp.get("is_preview") or not resp.get("completed"):
+        # A session counts as valid if the child actually answered the test
+        # questions -- we do NOT rely on Lookit's `completed` flag, which is
+        # often False even when every question was answered.
+        if resp.get("is_preview"):
             continue
-        n_completed += 1
+        n_sessions += 1
 
         try:
             age_days = int(child.get("age_rounded", ""))
@@ -101,20 +105,28 @@ def parse_experiment(exp):
         age_years = round(age_days / 365.25, 2) if age_days else ""
         age_group = int(age_days / 365.25) if age_days else ""
 
-        trials = []
+        trials = []          # only trials with an actual response
         cond_hints = []
         for t in entry.get("exp_data", []):
             if "left_label" not in t or "scenario" not in t:
                 continue
             if t.get("scenario") == "warmup":
                 continue
-            video = t.get("video", "")
             resp_idx = t.get("response")
-            label = (t.get("left_label") if resp_idx == 0
-                     else t.get("right_label") if resp_idx == 1 else "")
-            cond_hint, scenario, verb, question = parse_trial(exp, video)
+            if resp_idx == 0:
+                label = t.get("left_label")
+            elif resp_idx == 1:
+                label = t.get("right_label")
+            else:
+                continue                        # unanswered -> skip
+            cond_hint, scenario, verb, question = parse_trial(exp, t.get("video", ""))
             cond_hints.append(cond_hint)
             trials.append((scenario, verb, question, label))
+
+        # require the full set of test questions to be answered
+        if len(trials) < 4:
+            n_incomplete += 1
+            continue
 
         condition = child_condition(exp, cond_hints)
         if condition == "both":
@@ -125,6 +137,13 @@ def parse_experiment(exp):
         if age_group == "" or age_group < 3 or age_group > 9:
             n_excluded_age += 1
             continue
+
+        # de-duplicate children who have more than one valid session (keep first)
+        child_id = child.get("hashed_id", "")
+        if child_id in seen:
+            n_dup += 1
+            continue
+        seen.add(child_id)
 
         for scenario, verb, question, label in trials:
             distal = 1 if label == "distal" else 0 if label == "proximal" else ""
@@ -151,10 +170,11 @@ def parse_experiment(exp):
         w.writeheader()
         w.writerows(out_rows)
 
-    n_kept = len({r["child_id"] for r in out_rows})
+    n_kept = len(seen)
     print(f"{exp}: {out_file.name}  ({n_kept} children, {len(out_rows)} rows; "
-          f"completed={n_completed}, excluded 'both'={n_excluded_both}, "
-          f"excluded age<3/>9={n_excluded_age})")
+          f"sessions={n_sessions}, incomplete<4={n_incomplete}, "
+          f"excluded 'both'={n_excluded_both}, excluded age<3/>9={n_excluded_age}, "
+          f"duplicate children={n_dup})")
 
 
 def main():

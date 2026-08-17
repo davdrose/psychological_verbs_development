@@ -14,8 +14,11 @@ has an **adults** version (jsPsych / Proliferate) and a **children** version
 
 Both `*_clean.csv` files are **long** (one row per participant × scenario ×
 question) with the response coded `distal` / `proximal` (0/1). The child files
-additionally carry `age_days`, `age_years`, `age_group`, and `gender`; children
-outside the target **3–9** age range are excluded.
+additionally carry `age_days`, `age_years`, `age_group`, and `gender`. A child is
+included if they **answered all test questions** (not by Lookit's `completed`
+flag, which is often False even for complete sessions); duplicate children are
+de-duplicated, and children outside the target **3–9** age range are excluded.
+This yields roughly 30 children per condition per age group.
 
 ## Privacy — raw children exports are NOT committed
 
@@ -29,7 +32,7 @@ committed. Keep the raw JSONs locally to be able to re-run `parse_children.py`.
 
 - **exp1** — drum & balloon. Adults **between-subjects** (control = causal verbs
   `break`/`pop`; experimental = psych verbs `angry`/`sad`). Children between-subjects
-  too (verb type inferred from the verbs a child saw); 18 children who saw all four
+  too (verb type inferred from the verbs a child saw); children who saw all four
   verbs are excluded (`condition = both`). Adult experimental responses were
   recovered from `exp1/drums_experimental_responses.csv` and merged in by `workerid`
   (`clean_exp1.py`); adult `workerid 1312` is absent from that export.
