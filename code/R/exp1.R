@@ -25,13 +25,13 @@ prep <- function(f) {
 child <- prep("../../data/experiment1/children/exp1_children.csv")
 adult <- prep("../../data/experiment1/adults/exp1_adults.csv")
 
-facet_labels <- c(control      = "Control (causal verbs: break / pop)",
-                  experimental = "Experimental (psych verbs: angry / sad)")
+facet_labels <- c(control = "non-psychological", experimental = "psychological")
 
 p <- plot_dev(child, adult, facet = "condition", facet_labels = facet_labels,
-              title = "Exp 1: causal vs. psychological verbs (between-subjects)",
-              y_lab = "Probability of selecting the distal (causal) cause")
+              title = "Exp 1: non-psychological vs. psychological verbs (between-subjects)",
+              y_lab = "distal or proximal cause",
+              pole_high = "distal", pole_low = "proximal")
 
-ggsave("../../figures/exp1/exp1_development.pdf", p, height = 5.5, width = 12)
-ggsave("../../figures/exp1/exp1_development.png", p, height = 5.5, width = 12, dpi = 150)
+ggsave("../../figures/exp1/exp1_development.pdf", p, height = 5.6, width = 13)
+ggsave("../../figures/exp1/exp1_development.png", p, height = 5.6, width = 13, dpi = 150)
 cat("saved figures/exp1/exp1_development.{pdf,png}\n")

@@ -26,9 +26,10 @@ child <- prep("../../data/experiment3/children/exp3_children.csv")
 adult <- prep("../../data/experiment3/adults/exp3_adults.csv")
 
 p <- plot_dev(child, adult, facet = NULL,
-              title = "Exp 3: scared vs. surprised",
-              y_lab = "Probability of selecting the distal (causal) cause")
+              title = "Exp 3: scared & surprised scenarios (pooled)",
+              y_lab = "distal or proximal cause",
+              pole_high = "distal", pole_low = "proximal")
 
-ggsave("../../figures/exp3/exp3_development.pdf", p, height = 5.5, width = 7.5)
-ggsave("../../figures/exp3/exp3_development.png", p, height = 5.5, width = 7.5, dpi = 150)
+ggsave("../../figures/exp3/exp3_development.pdf", p, height = 5.2, width = 8)
+ggsave("../../figures/exp3/exp3_development.png", p, height = 5.2, width = 8, dpi = 150)
 cat("saved figures/exp3/exp3_development.{pdf,png}\n")

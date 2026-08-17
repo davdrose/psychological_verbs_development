@@ -16,8 +16,8 @@ Each reads `../../data/experimentN/adults/expN_adults.csv` and
 `../../data/experimentN/children/expN_children.csv` and saves
 `../../figures/expN/expN_development.{pdf,png}`.
 
-- **exp1** — faceted Control (causal verbs) vs. Experimental (psych verbs).
-- **exp2** — faceted Physical vs. Mental (absence scenarios).
+- **exp1** — faceted non-psychological vs. psychological (verb type); y-axis distal/proximal.
+- **exp2** — faceted non-psychological vs. psychological (absence scenarios); y-axis absence/direct.
 - **exp3** — single panel (scared vs. surprised).
 
 Run each from this folder, e.g. `Rscript exp1.R`.

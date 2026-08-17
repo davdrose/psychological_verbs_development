@@ -25,12 +25,13 @@ prep <- function(f) {
 child <- prep("../../data/experiment2/children/exp2_children.csv")
 adult <- prep("../../data/experiment2/adults/exp2_adults.csv")
 
-facet_labels <- c(physical = "Physical", mental = "Mental")
+facet_labels <- c(physical = "non-psychological", mental = "psychological")
 
 p <- plot_dev(child, adult, facet = "condition", facet_labels = facet_labels,
-              title = "Exp 2: absence scenarios (physical vs. mental)",
-              y_lab = "Probability of selecting the distal (absent) cause")
+              title = "Exp 2: non-psychological vs. psychological (absence scenarios)",
+              y_lab = "absence or direct cause",
+              pole_high = "absence", pole_low = "direct")
 
-ggsave("../../figures/exp2/exp2_development.pdf", p, height = 5.5, width = 12)
-ggsave("../../figures/exp2/exp2_development.png", p, height = 5.5, width = 12, dpi = 150)
+ggsave("../../figures/exp2/exp2_development.pdf", p, height = 5.6, width = 13)
+ggsave("../../figures/exp2/exp2_development.png", p, height = 5.6, width = 13, dpi = 150)
 cat("saved figures/exp2/exp2_development.{pdf,png}\n")
