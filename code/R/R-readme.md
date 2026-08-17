@@ -2,23 +2,26 @@
 
 Analysis and figure-generation scripts.
 
-## `exp1.R`
+## `helpers.R`
 
-Experiment 1 (causal vs. psychological verbs; drum & balloon).
+Shared code sourced by the per-experiment scripts:
+- `boot_ci()` / `point_ci()` — participant-level bootstrapped means and 95% CIs.
+- `plot_dev()` — builds the combined **developmental figure**: children by age
+  (logistic-GLM smooth + per-age means) alongside an **Adults** column, coloured
+  by question (caused = red, lexical = blue), optionally faceted by condition.
 
-- Reads `../../data/exp1_clean.csv`.
-- Computes the proportion of **distal** (causal-candidate) responses per condition × scenario × question, with bootstrapped 95% CIs.
-- Saves `../../figures/exp1/exp1_caused_vs_lexical.{pdf,png}`.
-- Both conditions (causal verbs / psychological verbs) are shown; the experimental responses are merged in from `drums_experimental_responses.csv` (see [`../../data/data-readme.md`](../../data/data-readme.md)).
+## `exp1.R`, `exp2.R`, `exp3.R`
 
-## `exp2.R`
+Each reads `../../data/expN_adult_clean.csv` and `../../data/expN_child_clean.csv`
+and saves `../../figures/expN/expN_development.{pdf,png}`.
 
-Experiment 2 (absence scenarios; physical vs. mental). Reads `../../data/exp2_clean.csv`; proportion distal per condition × scenario × question with bootstrapped 95% CIs; saves `../../figures/exp2/exp2_caused_vs_lexical.{pdf,png}`.
+- **exp1** — faceted Control (causal verbs) vs. Experimental (psych verbs).
+- **exp2** — faceted Physical vs. Mental (absence scenarios).
+- **exp3** — single panel (scared vs. surprised).
 
-## `exp3.R`
+Run each from this folder, e.g. `Rscript exp1.R`.
+Requires: `readr`, `dplyr`, `tidyr`, `ggplot2`.
 
-Experiment 3 (scared vs. excited; single condition). Reads `../../data/exp3_clean.csv`; saves `../../figures/exp3/exp3_caused_vs_lexical.{pdf,png}`.
-
----
-
-Run each from this folder, e.g. `Rscript exp2.R`. Requires: `readr`, `dplyr`, `tidyr`, `ggplot2`.
+> The smooth is a descriptive logistic GLM over age (children); it does not model
+> the participant-level clustering. A full Bayesian mixed model (as in the
+> reference repos, via `brms`) can be added later.

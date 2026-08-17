@@ -25,7 +25,7 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
 RAW_DIR = REPO / "data" / "exp2"
-OUT_FILE = REPO / "data" / "exp2_clean.csv"
+OUT_FILE = REPO / "data" / "exp2_adult_clean.csv"
 
 SCENARIOS = ["hurt", "shock"]
 QUESTIONS = ["cause", "lexical"]

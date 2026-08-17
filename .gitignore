@@ -1,2 +1,6 @@
 .DS_Store
 *.pyc
+
+# Raw, identifiable Lookit/CHS child response exports -- never commit.
+# Anonymized versions live in data/exp*_child_clean.csv (see code/python/parse_children.py).
+*identifiable*.json

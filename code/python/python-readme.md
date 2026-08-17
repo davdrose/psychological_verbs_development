@@ -2,22 +2,29 @@
 
 Data-cleaning / preprocessing scripts.
 
-## `clean_exp1.py`
+## Adults — `clean_exp1.py`, `clean_exp2.py`, `clean_exp3.py`
 
-Merges the raw Proliferate export for Experiment 1 (`data/exp1/`, seven split CSVs) into a single tidy long-format file `data/exp1_clean.csv` for analysis in `code/R/`.
+Merge each experiment's raw Proliferate export (`data/expN/`) into a tidy
+long-format `data/expN_adult_clean.csv` (one row per participant × scenario ×
+question; response coded `distal` / `proximal`, 0/1).
 
-- One row per participant × scenario × question; response coded as `distal` / `proximal` (0/1).
-- Maps response columns for **both** conditions (control → `pop`/`break`; experimental → `sad`/`anger`). The control responses come from the main `-responses.csv`; the experimental responses are merged in from `drums_experimental_responses.csv` (see [`../../data/data-readme.md`](../../data/data-readme.md)).
+- **exp1** — control response columns come from the main `-responses.csv`; the
+  experimental responses are merged in from `data/exp1/drums_experimental_responses.csv`.
+- **exp2 / exp3** — uniform response columns (`{scenario}_{question}`).
+- exp2/exp3 drop duplicate `workerid` submissions (keep first) and print which.
 
-Run: `python code/python/clean_exp1.py`  (works from any directory)
+Run: `python code/python/clean_expN.py` (works from any directory). Requires `pandas`.
 
-## `clean_exp2.py` / `clean_exp3.py`
+## Children — `parse_children.py`
 
-Same idea for Experiments 2 and 3, whose Proliferate exports use uniform response columns (`{scenario}_{question}`):
+Parses the three Lookit / CHS response exports into anonymized long-format
+`data/expN_child_clean.csv` (adds `age_days`, `age_years`, `age_group`, `gender`).
 
-- **`clean_exp2.py`** → `data/exp2_clean.csv` (absence scenarios; between-subjects `physical`/`mental`; scenarios `hurt`/`shock`).
-- **`clean_exp3.py`** → `data/exp3_clean.csv` (single condition; scenarios `excited`/`scared`).
+- Choice images are always (left = distal, right = proximal), so `response` 0 → distal.
+- Only completed, non-preview sessions are kept; condition is inferred per child
+  (exp1: causal vs. psych verbs; exp2: physical vs. mental). exp1 children who saw
+  all four verbs are excluded.
+- **Only de-identified fields are written** — no names, birthdates, or test dates.
+  The raw `*identifiable*.json` inputs are git-ignored; keep them locally to re-run.
 
-Both drop duplicate `workerid`s (keep first) and print a warning listing them — exp2 has 3 (`1122, 1134, 1185`), two with conflicting responses.
-
-Requires: `pandas`.
+Run: `python code/python/parse_children.py`. Requires `pandas` (stdlib `json`/`csv`).

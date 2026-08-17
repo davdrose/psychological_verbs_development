@@ -30,7 +30,7 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
 RAW_DIR = REPO / "data" / "exp1"
-OUT_FILE = REPO / "data" / "exp1_clean.csv"
+OUT_FILE = REPO / "data" / "exp1_adult_clean.csv"
 
 # response column name in responses.csv, keyed by condition -> (scenario, question)
 RESPONSE_MAP = {

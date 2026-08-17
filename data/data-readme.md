@@ -1,32 +1,43 @@
 # Data
 
-Anonymized data for the psychological-verbs experiments.
+Anonymized data for the three psychological-verbs experiments. Each experiment
+has an **adults** version (jsPsych / Proliferate) and a **children** version
+(Lookit / Children Helping Science).
 
-## Experiment 1 — `exp1/` (raw) and `exp1_clean.csv` (analysis-ready)
+## Files per experiment
 
-Adults, between-subjects (causal vs. psychological verbs; drum + balloon scenarios), run in jsPsych via Proliferate.
+| file | who | description |
+|---|---|---|
+| `expN/` | adults | raw Proliferate export (split CSVs) |
+| `expN_adult_clean.csv` | adults | tidy long format from [`code/python/clean_expN.py`](../code/python/clean_expN.py) |
+| `expN_child_clean.csv` | children | tidy long format from [`code/python/parse_children.py`](../code/python/parse_children.py) |
 
-- **`exp1/`** — the raw Proliferate export, split across several CSVs (one field per file): `-condition`, `-participant_id`, `-participants`, `-question_order_label`, `-question_orders`, `-responses`, `-scenario_order`, plus **`drums_experimental_responses.csv`** (see below).
-- **`exp1_clean.csv`** — tidy **long** format produced by [`code/python/clean_exp1.py`](../code/python/clean_exp1.py): one row per participant × scenario × question, with the response coded as `distal` / `proximal` (0/1). Columns: `workerid, participant_id, condition, scenario, question, verb, response, distal, proximal, question_order_label, age, gender, race, ethnicity`. 202 participants (control 101, experimental 101).
+Both `*_clean.csv` files are **long** (one row per participant × scenario ×
+question) with the response coded `distal` / `proximal` (0/1). The child files
+additionally carry `age_days`, `age_years`, `age_group`, and `gender`.
 
-To regenerate: `python code/python/clean_exp1.py`
+## Privacy — raw children exports are NOT committed
 
-> **Note on the two response files:** the main `-responses.csv` (a "what_happened" query export) only carries the **control** condition's response columns (`balloon_cause_pop, balloon_pop, drum_break, drum_cause_break`). The **experimental** condition's responses (`balloon_cause_sad, balloon_sad, drum_anger, drum_cause_anger`) were exported separately as **`drums_experimental_responses.csv`**; `clean_exp1.py` merges it in by `workerid`. This recovers 101 of the 102 experimental participants (`workerid 1312` is absent from the experimental export).
+The raw Lookit exports (`Join-Adventures-*_all-responses-identifiable.json`) are
+**identifiable** and are git-ignored (see [`.gitignore`](../.gitignore)). Only the
+anonymized `expN_child_clean.csv` (hashed child id, rounded age, gender, and the
+experimental factors/responses — no names, birthdates, or test dates) are
+committed. Keep the raw JSONs locally to be able to re-run `parse_children.py`.
 
-## Experiment 2 — `exp2/` (raw) and `exp2_clean.csv`
+## Per-experiment notes
 
-Adults, absence scenarios. **Between-subjects** `condition = physical | mental`; within-subject `scenario = hurt | shock`, `question = cause | lexical`. Response columns are uniform across conditions (`{scenario}_{question}`), so both conditions have complete data.
+- **exp1** — drum & balloon. Adults **between-subjects** (control = causal verbs
+  `break`/`pop`; experimental = psych verbs `angry`/`sad`). Children between-subjects
+  too (verb type inferred from the verbs a child saw); 18 children who saw all four
+  verbs are excluded (`condition = both`). Adult experimental responses were
+  recovered from `exp1/drums_experimental_responses.csv` and merged in by `workerid`
+  (`clean_exp1.py`); adult `workerid 1312` is absent from that export.
+- **exp2** — absence scenarios; **between-subjects** `physical` / `mental`; scenarios
+  `hurt` / `shock`. Adults: 3 duplicate `workerid` submissions (`1122, 1134, 1185`)
+  are removed keeping each participant's first submission.
+- **exp3** — single condition; scenarios `scared` / `surprised` (the second scenario
+  is labelled `excited` in the adult export — the same scenario under a different name;
+  the figures collapse across scenarios).
 
-- **`exp2/`** — raw Proliferate export (split CSVs).
-- **`exp2_clean.csv`** — long format from [`code/python/clean_exp2.py`](../code/python/clean_exp2.py); 201 participants (physical 102, mental 99), coded `distal`/`proximal` (here the distal cause is the absence).
-
-> Standard cleaning: 3 duplicate `workerid` submissions (`1122, 1134, 1185`) are removed, keeping each participant's first submission.
-
-## Experiment 3 — `exp3/` (raw) and `exp3_clean.csv`
-
-Adults, **single condition**. Within-subject `scenario = excited | scared`, `question = cause | lexical`.
-
-- **`exp3/`** — raw Proliferate export (split CSVs).
-- **`exp3_clean.csv`** — long format from [`code/python/clean_exp3.py`](../code/python/clean_exp3.py); 102 participants, coded `distal`/`proximal`.
-
-To regenerate any experiment: `python code/python/clean_expN.py`
+To regenerate: `python code/python/clean_exp{1,2,3}.py` (adults) and
+`python code/python/parse_children.py` (children).
