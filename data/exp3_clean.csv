@@ -1,0 +1,409 @@
+workerid,participant_id,condition,scenario,question,response,distal,proximal,age,gender,race,ethnicity
+846,P1780164446739_8881,visible,excited,cause,distal,1,0,19,Male,Black/African American,Non-Hispanic
+846,P1780164446739_8881,visible,excited,lexical,proximal,0,1,19,Male,Black/African American,Non-Hispanic
+846,P1780164446739_8881,visible,scared,cause,distal,1,0,19,Male,Black/African American,Non-Hispanic
+846,P1780164446739_8881,visible,scared,lexical,proximal,0,1,19,Male,Black/African American,Non-Hispanic
+796,P1780164167080_4776,visible,excited,cause,proximal,0,1,36,Male,White,Hispanic
+796,P1780164167080_4776,visible,excited,lexical,proximal,0,1,36,Male,White,Hispanic
+796,P1780164167080_4776,visible,scared,cause,proximal,0,1,36,Male,White,Hispanic
+796,P1780164167080_4776,visible,scared,lexical,proximal,0,1,36,Male,White,Hispanic
+792,P1780164167980_6874,visible,excited,cause,proximal,0,1,32,Male,Black/African American,
+792,P1780164167980_6874,visible,excited,lexical,proximal,0,1,32,Male,Black/African American,
+792,P1780164167980_6874,visible,scared,cause,distal,1,0,32,Male,Black/African American,
+792,P1780164167980_6874,visible,scared,lexical,proximal,0,1,32,Male,Black/African American,
+797,P1780164169416_8315,visible,excited,cause,proximal,0,1,26,Female,White,Non-Hispanic
+797,P1780164169416_8315,visible,excited,lexical,proximal,0,1,26,Female,White,Non-Hispanic
+797,P1780164169416_8315,visible,scared,cause,proximal,0,1,26,Female,White,Non-Hispanic
+797,P1780164169416_8315,visible,scared,lexical,distal,1,0,26,Female,White,Non-Hispanic
+773,P1780164121918_9038,visible,excited,cause,distal,1,0,21,Female,other_race,Hispanic
+773,P1780164121918_9038,visible,excited,lexical,proximal,0,1,21,Female,other_race,Hispanic
+773,P1780164121918_9038,visible,scared,cause,distal,1,0,21,Female,other_race,Hispanic
+773,P1780164121918_9038,visible,scared,lexical,proximal,0,1,21,Female,other_race,Hispanic
+805,P1780164180249_2599,visible,excited,cause,distal,1,0,56,Female,White,Non-Hispanic
+805,P1780164180249_2599,visible,excited,lexical,proximal,0,1,56,Female,White,Non-Hispanic
+805,P1780164180249_2599,visible,scared,cause,distal,1,0,56,Female,White,Non-Hispanic
+805,P1780164180249_2599,visible,scared,lexical,distal,1,0,56,Female,White,Non-Hispanic
+838,P1780164392738_2875,visible,excited,cause,distal,1,0,27,Female,White,Non-Hispanic
+838,P1780164392738_2875,visible,excited,lexical,proximal,0,1,27,Female,White,Non-Hispanic
+838,P1780164392738_2875,visible,scared,cause,distal,1,0,27,Female,White,Non-Hispanic
+838,P1780164392738_2875,visible,scared,lexical,distal,1,0,27,Female,White,Non-Hispanic
+845,P1780164454301_6557,visible,excited,cause,distal,1,0,50,Female,other_race,Non-Hispanic
+845,P1780164454301_6557,visible,excited,lexical,proximal,0,1,50,Female,other_race,Non-Hispanic
+845,P1780164454301_6557,visible,scared,cause,distal,1,0,50,Female,other_race,Non-Hispanic
+845,P1780164454301_6557,visible,scared,lexical,proximal,0,1,50,Female,other_race,Non-Hispanic
+811,P1780164252543_2042,visible,excited,cause,distal,1,0,63,Female,Black/African American,Non-Hispanic
+811,P1780164252543_2042,visible,excited,lexical,distal,1,0,63,Female,Black/African American,Non-Hispanic
+811,P1780164252543_2042,visible,scared,cause,distal,1,0,63,Female,Black/African American,Non-Hispanic
+811,P1780164252543_2042,visible,scared,lexical,distal,1,0,63,Female,Black/African American,Non-Hispanic
+1035,P1780165024755_3662,visible,excited,cause,proximal,0,1,47,Female,Black/African American,Non-Hispanic
+1035,P1780165024755_3662,visible,excited,lexical,proximal,0,1,47,Female,Black/African American,Non-Hispanic
+1035,P1780165024755_3662,visible,scared,cause,distal,1,0,47,Female,Black/African American,Non-Hispanic
+1035,P1780165024755_3662,visible,scared,lexical,distal,1,0,47,Female,Black/African American,Non-Hispanic
+826,P1780164303678_9681,visible,excited,cause,distal,1,0,46,Male,White,Non-Hispanic
+826,P1780164303678_9681,visible,excited,lexical,proximal,0,1,46,Male,White,Non-Hispanic
+826,P1780164303678_9681,visible,scared,cause,distal,1,0,46,Male,White,Non-Hispanic
+826,P1780164303678_9681,visible,scared,lexical,proximal,0,1,46,Male,White,Non-Hispanic
+1060,P1780165519580_8233,visible,excited,cause,distal,1,0,27,Female,Black/African American,Hispanic
+1060,P1780165519580_8233,visible,excited,lexical,proximal,0,1,27,Female,Black/African American,Hispanic
+1060,P1780165519580_8233,visible,scared,cause,distal,1,0,27,Female,Black/African American,Hispanic
+1060,P1780165519580_8233,visible,scared,lexical,proximal,0,1,27,Female,Black/African American,Hispanic
+818,P1780164267317_3479,visible,excited,cause,distal,1,0,21,Male,White,Non-Hispanic
+818,P1780164267317_3479,visible,excited,lexical,proximal,0,1,21,Male,White,Non-Hispanic
+818,P1780164267317_3479,visible,scared,cause,distal,1,0,21,Male,White,Non-Hispanic
+818,P1780164267317_3479,visible,scared,lexical,proximal,0,1,21,Male,White,Non-Hispanic
+831,P1780164321600_4596,visible,excited,cause,proximal,0,1,50,Female,Black/African American,Non-Hispanic
+831,P1780164321600_4596,visible,excited,lexical,proximal,0,1,50,Female,Black/African American,Non-Hispanic
+831,P1780164321600_4596,visible,scared,cause,distal,1,0,50,Female,Black/African American,Non-Hispanic
+831,P1780164321600_4596,visible,scared,lexical,proximal,0,1,50,Female,Black/African American,Non-Hispanic
+815,P1780164265230_4513,visible,excited,cause,distal,1,0,27,Male,White,Hispanic
+815,P1780164265230_4513,visible,excited,lexical,distal,1,0,27,Male,White,Hispanic
+815,P1780164265230_4513,visible,scared,cause,proximal,0,1,27,Male,White,Hispanic
+815,P1780164265230_4513,visible,scared,lexical,distal,1,0,27,Male,White,Hispanic
+839,P1780164404978_925,visible,excited,cause,proximal,0,1,54,Male,White,Non-Hispanic
+839,P1780164404978_925,visible,excited,lexical,proximal,0,1,54,Male,White,Non-Hispanic
+839,P1780164404978_925,visible,scared,cause,proximal,0,1,54,Male,White,Non-Hispanic
+839,P1780164404978_925,visible,scared,lexical,proximal,0,1,54,Male,White,Non-Hispanic
+813,P1780164260019_1461,visible,excited,cause,distal,1,0,55,Female,White,Non-Hispanic
+813,P1780164260019_1461,visible,excited,lexical,proximal,0,1,55,Female,White,Non-Hispanic
+813,P1780164260019_1461,visible,scared,cause,distal,1,0,55,Female,White,Non-Hispanic
+813,P1780164260019_1461,visible,scared,lexical,proximal,0,1,55,Female,White,Non-Hispanic
+1262,P1780167018009_8112,visible,excited,cause,proximal,0,1,39,Male,Black/African American,Hispanic
+1262,P1780167018009_8112,visible,excited,lexical,proximal,0,1,39,Male,Black/African American,Hispanic
+1262,P1780167018009_8112,visible,scared,cause,distal,1,0,39,Male,Black/African American,Hispanic
+1262,P1780167018009_8112,visible,scared,lexical,proximal,0,1,39,Male,Black/African American,Hispanic
+795,P1780164169409_9088,visible,excited,cause,distal,1,0,28,Male,Black/African American,Non-Hispanic
+795,P1780164169409_9088,visible,excited,lexical,distal,1,0,28,Male,Black/African American,Non-Hispanic
+795,P1780164169409_9088,visible,scared,cause,proximal,0,1,28,Male,Black/African American,Non-Hispanic
+795,P1780164169409_9088,visible,scared,lexical,proximal,0,1,28,Male,Black/African American,Non-Hispanic
+837,P1780164390847_5946,visible,excited,cause,distal,1,0,66,Female,White,Non-Hispanic
+837,P1780164390847_5946,visible,excited,lexical,proximal,0,1,66,Female,White,Non-Hispanic
+837,P1780164390847_5946,visible,scared,cause,distal,1,0,66,Female,White,Non-Hispanic
+837,P1780164390847_5946,visible,scared,lexical,proximal,0,1,66,Female,White,Non-Hispanic
+1189,P1780166290014_9674,visible,excited,cause,proximal,0,1,66,Female,White,Non-Hispanic
+1189,P1780166290014_9674,visible,excited,lexical,proximal,0,1,66,Female,White,Non-Hispanic
+1189,P1780166290014_9674,visible,scared,cause,distal,1,0,66,Female,White,Non-Hispanic
+1189,P1780166290014_9674,visible,scared,lexical,distal,1,0,66,Female,White,Non-Hispanic
+806,P1780164198750_3592,visible,excited,cause,distal,1,0,30,Female,White,Hispanic
+806,P1780164198750_3592,visible,excited,lexical,proximal,0,1,30,Female,White,Hispanic
+806,P1780164198750_3592,visible,scared,cause,distal,1,0,30,Female,White,Hispanic
+806,P1780164198750_3592,visible,scared,lexical,proximal,0,1,30,Female,White,Hispanic
+986,P1780164761092_3949,visible,excited,cause,proximal,0,1,34,Female,White,Hispanic
+986,P1780164761092_3949,visible,excited,lexical,proximal,0,1,34,Female,White,Hispanic
+986,P1780164761092_3949,visible,scared,cause,proximal,0,1,34,Female,White,Hispanic
+986,P1780164761092_3949,visible,scared,lexical,proximal,0,1,34,Female,White,Hispanic
+843,P1780164429298_9550,visible,excited,cause,distal,1,0,49,Female,White,Non-Hispanic
+843,P1780164429298_9550,visible,excited,lexical,proximal,0,1,49,Female,White,Non-Hispanic
+843,P1780164429298_9550,visible,scared,cause,distal,1,0,49,Female,White,Non-Hispanic
+843,P1780164429298_9550,visible,scared,lexical,distal,1,0,49,Female,White,Non-Hispanic
+824,P1780164293753_4810,visible,excited,cause,proximal,0,1,20,Female,Black/African American,Non-Hispanic
+824,P1780164293753_4810,visible,excited,lexical,proximal,0,1,20,Female,Black/African American,Non-Hispanic
+824,P1780164293753_4810,visible,scared,cause,proximal,0,1,20,Female,Black/African American,Non-Hispanic
+824,P1780164293753_4810,visible,scared,lexical,proximal,0,1,20,Female,Black/African American,Non-Hispanic
+833,P1780164354479_5133,visible,excited,cause,distal,1,0,66,Female,White,Non-Hispanic
+833,P1780164354479_5133,visible,excited,lexical,proximal,0,1,66,Female,White,Non-Hispanic
+833,P1780164354479_5133,visible,scared,cause,distal,1,0,66,Female,White,Non-Hispanic
+833,P1780164354479_5133,visible,scared,lexical,proximal,0,1,66,Female,White,Non-Hispanic
+1071,P1780165510608_8684,visible,excited,cause,distal,1,0,35,Female,White,Non-Hispanic
+1071,P1780165510608_8684,visible,excited,lexical,proximal,0,1,35,Female,White,Non-Hispanic
+1071,P1780165510608_8684,visible,scared,cause,distal,1,0,35,Female,White,Non-Hispanic
+1071,P1780165510608_8684,visible,scared,lexical,proximal,0,1,35,Female,White,Non-Hispanic
+1057,P1780165307459_8576,visible,excited,cause,proximal,0,1,32,Male,White,Non-Hispanic
+1057,P1780165307459_8576,visible,excited,lexical,distal,1,0,32,Male,White,Non-Hispanic
+1057,P1780165307459_8576,visible,scared,cause,proximal,0,1,32,Male,White,Non-Hispanic
+1057,P1780165307459_8576,visible,scared,lexical,proximal,0,1,32,Male,White,Non-Hispanic
+801,P1780164175130_8224,visible,excited,cause,proximal,0,1,40,Male,Black/African American,Non-Hispanic
+801,P1780164175130_8224,visible,excited,lexical,proximal,0,1,40,Male,Black/African American,Non-Hispanic
+801,P1780164175130_8224,visible,scared,cause,proximal,0,1,40,Male,Black/African American,Non-Hispanic
+801,P1780164175130_8224,visible,scared,lexical,proximal,0,1,40,Male,Black/African American,Non-Hispanic
+819,P1780164271213_8886,visible,excited,cause,proximal,0,1,26,Female,White,Non-Hispanic
+819,P1780164271213_8886,visible,excited,lexical,proximal,0,1,26,Female,White,Non-Hispanic
+819,P1780164271213_8886,visible,scared,cause,proximal,0,1,26,Female,White,Non-Hispanic
+819,P1780164271213_8886,visible,scared,lexical,proximal,0,1,26,Female,White,Non-Hispanic
+785,P1780164144884_4832,visible,excited,cause,distal,1,0,47,Male,White,Non-Hispanic
+785,P1780164144884_4832,visible,excited,lexical,proximal,0,1,47,Male,White,Non-Hispanic
+785,P1780164144884_4832,visible,scared,cause,distal,1,0,47,Male,White,Non-Hispanic
+785,P1780164144884_4832,visible,scared,lexical,distal,1,0,47,Male,White,Non-Hispanic
+842,P1780164418206_7391,visible,excited,cause,distal,1,0,30,Female,Black/African American,Non-Hispanic
+842,P1780164418206_7391,visible,excited,lexical,proximal,0,1,30,Female,Black/African American,Non-Hispanic
+842,P1780164418206_7391,visible,scared,cause,distal,1,0,30,Female,Black/African American,Non-Hispanic
+842,P1780164418206_7391,visible,scared,lexical,proximal,0,1,30,Female,Black/African American,Non-Hispanic
+1044,P1780165113465_9039,visible,excited,cause,proximal,0,1,38,Male,Asian,Non-Hispanic
+1044,P1780165113465_9039,visible,excited,lexical,proximal,0,1,38,Male,Asian,Non-Hispanic
+1044,P1780165113465_9039,visible,scared,cause,distal,1,0,38,Male,Asian,Non-Hispanic
+1044,P1780165113465_9039,visible,scared,lexical,distal,1,0,38,Male,Asian,Non-Hispanic
+836,P1780164390575_5703,visible,excited,cause,proximal,0,1,25,Male,White,Non-Hispanic
+836,P1780164390575_5703,visible,excited,lexical,proximal,0,1,25,Male,White,Non-Hispanic
+836,P1780164390575_5703,visible,scared,cause,proximal,0,1,25,Male,White,Non-Hispanic
+836,P1780164390575_5703,visible,scared,lexical,proximal,0,1,25,Male,White,Non-Hispanic
+821,P1780164271901_6219,visible,excited,cause,proximal,0,1,35,Female,White,Non-Hispanic
+821,P1780164271901_6219,visible,excited,lexical,proximal,0,1,35,Female,White,Non-Hispanic
+821,P1780164271901_6219,visible,scared,cause,distal,1,0,35,Female,White,Non-Hispanic
+821,P1780164271901_6219,visible,scared,lexical,proximal,0,1,35,Female,White,Non-Hispanic
+794,P1780164159016_7367,visible,excited,cause,distal,1,0,41,Female,White,Non-Hispanic
+794,P1780164159016_7367,visible,excited,lexical,proximal,0,1,41,Female,White,Non-Hispanic
+794,P1780164159016_7367,visible,scared,cause,distal,1,0,41,Female,White,Non-Hispanic
+794,P1780164159016_7367,visible,scared,lexical,proximal,0,1,41,Female,White,Non-Hispanic
+783,P1780164140831_8201,visible,excited,cause,proximal,0,1,44,Female,Black/African American,Non-Hispanic
+783,P1780164140831_8201,visible,excited,lexical,proximal,0,1,44,Female,Black/African American,Non-Hispanic
+783,P1780164140831_8201,visible,scared,cause,distal,1,0,44,Female,Black/African American,Non-Hispanic
+783,P1780164140831_8201,visible,scared,lexical,distal,1,0,44,Female,Black/African American,Non-Hispanic
+1313,P1780537349807_1331,visible,excited,cause,proximal,0,1,46,Male,White,Hispanic
+1313,P1780537349807_1331,visible,excited,lexical,distal,1,0,46,Male,White,Hispanic
+1313,P1780537349807_1331,visible,scared,cause,proximal,0,1,46,Male,White,Hispanic
+1313,P1780537349807_1331,visible,scared,lexical,proximal,0,1,46,Male,White,Hispanic
+1052,P1780165242139_328,visible,excited,cause,proximal,0,1,29,Female,American Indian/Alaska Native,Non-Hispanic
+1052,P1780165242139_328,visible,excited,lexical,proximal,0,1,29,Female,American Indian/Alaska Native,Non-Hispanic
+1052,P1780165242139_328,visible,scared,cause,proximal,0,1,29,Female,American Indian/Alaska Native,Non-Hispanic
+1052,P1780165242139_328,visible,scared,lexical,proximal,0,1,29,Female,American Indian/Alaska Native,Non-Hispanic
+777,P1780164133149_7263,visible,excited,cause,distal,1,0,53,Female,White,Non-Hispanic
+777,P1780164133149_7263,visible,excited,lexical,proximal,0,1,53,Female,White,Non-Hispanic
+777,P1780164133149_7263,visible,scared,cause,distal,1,0,53,Female,White,Non-Hispanic
+777,P1780164133149_7263,visible,scared,lexical,distal,1,0,53,Female,White,Non-Hispanic
+844,P1780164448614_9397,visible,excited,cause,proximal,0,1,28,Male,White,Non-Hispanic
+844,P1780164448614_9397,visible,excited,lexical,proximal,0,1,28,Male,White,Non-Hispanic
+844,P1780164448614_9397,visible,scared,cause,proximal,0,1,28,Male,White,Non-Hispanic
+844,P1780164448614_9397,visible,scared,lexical,proximal,0,1,28,Male,White,Non-Hispanic
+784,P1780164144703_3540,visible,excited,cause,distal,1,0,32,Female,other_race,Non-Hispanic
+784,P1780164144703_3540,visible,excited,lexical,proximal,0,1,32,Female,other_race,Non-Hispanic
+784,P1780164144703_3540,visible,scared,cause,proximal,0,1,32,Female,other_race,Non-Hispanic
+784,P1780164144703_3540,visible,scared,lexical,proximal,0,1,32,Female,other_race,Non-Hispanic
+988,P1780164758370_8104,visible,excited,cause,proximal,0,1,50,Male,White,Non-Hispanic
+988,P1780164758370_8104,visible,excited,lexical,proximal,0,1,50,Male,White,Non-Hispanic
+988,P1780164758370_8104,visible,scared,cause,proximal,0,1,50,Male,White,Non-Hispanic
+988,P1780164758370_8104,visible,scared,lexical,proximal,0,1,50,Male,White,Non-Hispanic
+834,P1780164376239_1167,visible,excited,cause,distal,1,0,54,Female,,Non-Hispanic
+834,P1780164376239_1167,visible,excited,lexical,proximal,0,1,54,Female,,Non-Hispanic
+834,P1780164376239_1167,visible,scared,cause,distal,1,0,54,Female,,Non-Hispanic
+834,P1780164376239_1167,visible,scared,lexical,proximal,0,1,54,Female,,Non-Hispanic
+1220,P1780166402065_2968,visible,excited,cause,distal,1,0,24,Female,White,Non-Hispanic
+1220,P1780166402065_2968,visible,excited,lexical,distal,1,0,24,Female,White,Non-Hispanic
+1220,P1780166402065_2968,visible,scared,cause,distal,1,0,24,Female,White,Non-Hispanic
+1220,P1780166402065_2968,visible,scared,lexical,proximal,0,1,24,Female,White,Non-Hispanic
+816,P1780164269499_4072,visible,excited,cause,proximal,0,1,71,Female,White,Non-Hispanic
+816,P1780164269499_4072,visible,excited,lexical,proximal,0,1,71,Female,White,Non-Hispanic
+816,P1780164269499_4072,visible,scared,cause,proximal,0,1,71,Female,White,Non-Hispanic
+816,P1780164269499_4072,visible,scared,lexical,proximal,0,1,71,Female,White,Non-Hispanic
+825,P1780164290167_3560,visible,excited,cause,distal,1,0,69,Female,White,Non-Hispanic
+825,P1780164290167_3560,visible,excited,lexical,proximal,0,1,69,Female,White,Non-Hispanic
+825,P1780164290167_3560,visible,scared,cause,distal,1,0,69,Female,White,Non-Hispanic
+825,P1780164290167_3560,visible,scared,lexical,proximal,0,1,69,Female,White,Non-Hispanic
+778,P1780164133479_8419,visible,excited,cause,distal,1,0,26,Female,White,Non-Hispanic
+778,P1780164133479_8419,visible,excited,lexical,proximal,0,1,26,Female,White,Non-Hispanic
+778,P1780164133479_8419,visible,scared,cause,distal,1,0,26,Female,White,Non-Hispanic
+778,P1780164133479_8419,visible,scared,lexical,proximal,0,1,26,Female,White,Non-Hispanic
+832,P1780164289863_2963,visible,excited,cause,distal,1,0,34,Male,White,Non-Hispanic
+832,P1780164289863_2963,visible,excited,lexical,proximal,0,1,34,Male,White,Non-Hispanic
+832,P1780164289863_2963,visible,scared,cause,distal,1,0,34,Male,White,Non-Hispanic
+832,P1780164289863_2963,visible,scared,lexical,proximal,0,1,34,Male,White,Non-Hispanic
+847,P1780164482189_9344,visible,excited,cause,distal,1,0,49,Male,Black/African American,Non-Hispanic
+847,P1780164482189_9344,visible,excited,lexical,proximal,0,1,49,Male,Black/African American,Non-Hispanic
+847,P1780164482189_9344,visible,scared,cause,distal,1,0,49,Male,Black/African American,Non-Hispanic
+847,P1780164482189_9344,visible,scared,lexical,proximal,0,1,49,Male,Black/African American,Non-Hispanic
+812,P1780164257763_8902,visible,excited,cause,distal,1,0,36,Male,White,Non-Hispanic
+812,P1780164257763_8902,visible,excited,lexical,proximal,0,1,36,Male,White,Non-Hispanic
+812,P1780164257763_8902,visible,scared,cause,distal,1,0,36,Male,White,Non-Hispanic
+812,P1780164257763_8902,visible,scared,lexical,proximal,0,1,36,Male,White,Non-Hispanic
+798,P1780164170582_8463,visible,excited,cause,distal,1,0,68,Female,White,Non-Hispanic
+798,P1780164170582_8463,visible,excited,lexical,proximal,0,1,68,Female,White,Non-Hispanic
+798,P1780164170582_8463,visible,scared,cause,distal,1,0,68,Female,White,Non-Hispanic
+798,P1780164170582_8463,visible,scared,lexical,proximal,0,1,68,Female,White,Non-Hispanic
+809,P1780164226194_6791,visible,excited,cause,distal,1,0,39,Female,White,Hispanic
+809,P1780164226194_6791,visible,excited,lexical,proximal,0,1,39,Female,White,Hispanic
+809,P1780164226194_6791,visible,scared,cause,distal,1,0,39,Female,White,Hispanic
+809,P1780164226194_6791,visible,scared,lexical,proximal,0,1,39,Female,White,Hispanic
+802,P1780164174963_6703,visible,excited,cause,proximal,0,1,55,Male,White,Hispanic
+802,P1780164174963_6703,visible,excited,lexical,proximal,0,1,55,Male,White,Hispanic
+802,P1780164174963_6703,visible,scared,cause,distal,1,0,55,Male,White,Hispanic
+802,P1780164174963_6703,visible,scared,lexical,proximal,0,1,55,Male,White,Hispanic
+790,P1780164148166_1037,visible,excited,cause,proximal,0,1,20,Male,White,Non-Hispanic
+790,P1780164148166_1037,visible,excited,lexical,proximal,0,1,20,Male,White,Non-Hispanic
+790,P1780164148166_1037,visible,scared,cause,proximal,0,1,20,Male,White,Non-Hispanic
+790,P1780164148166_1037,visible,scared,lexical,proximal,0,1,20,Male,White,Non-Hispanic
+1070,P1780165482455_2164,visible,excited,cause,proximal,0,1,50,Male,other_race,Hispanic
+1070,P1780165482455_2164,visible,excited,lexical,proximal,0,1,50,Male,other_race,Hispanic
+1070,P1780165482455_2164,visible,scared,cause,proximal,0,1,50,Male,other_race,Hispanic
+1070,P1780165482455_2164,visible,scared,lexical,distal,1,0,50,Male,other_race,Hispanic
+1037,P1780165047084_6457,visible,excited,cause,proximal,0,1,39,Male,White,Non-Hispanic
+1037,P1780165047084_6457,visible,excited,lexical,proximal,0,1,39,Male,White,Non-Hispanic
+1037,P1780165047084_6457,visible,scared,cause,proximal,0,1,39,Male,White,Non-Hispanic
+1037,P1780165047084_6457,visible,scared,lexical,distal,1,0,39,Male,White,Non-Hispanic
+810,P1780164238037_7893,visible,excited,cause,proximal,0,1,31,Male,Asian,Non-Hispanic
+810,P1780164238037_7893,visible,excited,lexical,proximal,0,1,31,Male,Asian,Non-Hispanic
+810,P1780164238037_7893,visible,scared,cause,proximal,0,1,31,Male,Asian,Non-Hispanic
+810,P1780164238037_7893,visible,scared,lexical,proximal,0,1,31,Male,Asian,Non-Hispanic
+840,P1780164414868_8031,visible,excited,cause,proximal,0,1,40,Male,White,Non-Hispanic
+840,P1780164414868_8031,visible,excited,lexical,proximal,0,1,40,Male,White,Non-Hispanic
+840,P1780164414868_8031,visible,scared,cause,proximal,0,1,40,Male,White,Non-Hispanic
+840,P1780164414868_8031,visible,scared,lexical,proximal,0,1,40,Male,White,Non-Hispanic
+918,P1780164630185_6787,visible,excited,cause,proximal,0,1,45,Male,White,Non-Hispanic
+918,P1780164630185_6787,visible,excited,lexical,proximal,0,1,45,Male,White,Non-Hispanic
+918,P1780164630185_6787,visible,scared,cause,proximal,0,1,45,Male,White,Non-Hispanic
+918,P1780164630185_6787,visible,scared,lexical,distal,1,0,45,Male,White,Non-Hispanic
+814,P1780164261027_8441,visible,excited,cause,proximal,0,1,21,Non-binary,White,Non-Hispanic
+814,P1780164261027_8441,visible,excited,lexical,distal,1,0,21,Non-binary,White,Non-Hispanic
+814,P1780164261027_8441,visible,scared,cause,distal,1,0,21,Non-binary,White,Non-Hispanic
+814,P1780164261027_8441,visible,scared,lexical,distal,1,0,21,Non-binary,White,Non-Hispanic
+776,P1780164128188_4115,visible,excited,cause,distal,1,0,50,Female,White,Non-Hispanic
+776,P1780164128188_4115,visible,excited,lexical,proximal,0,1,50,Female,White,Non-Hispanic
+776,P1780164128188_4115,visible,scared,cause,proximal,0,1,50,Female,White,Non-Hispanic
+776,P1780164128188_4115,visible,scared,lexical,distal,1,0,50,Female,White,Non-Hispanic
+1056,P1780165301320_8055,visible,excited,cause,proximal,0,1,36,Female,White,Non-Hispanic
+1056,P1780165301320_8055,visible,excited,lexical,proximal,0,1,36,Female,White,Non-Hispanic
+1056,P1780165301320_8055,visible,scared,cause,proximal,0,1,36,Female,White,Non-Hispanic
+1056,P1780165301320_8055,visible,scared,lexical,proximal,0,1,36,Female,White,Non-Hispanic
+808,P1780164220689_30,visible,excited,cause,distal,1,0,38,Female,White,Non-Hispanic
+808,P1780164220689_30,visible,excited,lexical,proximal,0,1,38,Female,White,Non-Hispanic
+808,P1780164220689_30,visible,scared,cause,distal,1,0,38,Female,White,Non-Hispanic
+808,P1780164220689_30,visible,scared,lexical,proximal,0,1,38,Female,White,Non-Hispanic
+1045,P1780165114500_963,visible,excited,cause,distal,1,0,24,Male,White,Non-Hispanic
+1045,P1780165114500_963,visible,excited,lexical,proximal,0,1,24,Male,White,Non-Hispanic
+1045,P1780165114500_963,visible,scared,cause,distal,1,0,24,Male,White,Non-Hispanic
+1045,P1780165114500_963,visible,scared,lexical,proximal,0,1,24,Male,White,Non-Hispanic
+1017,P1780164887743_6193,visible,excited,cause,proximal,0,1,44,Male,White,Non-Hispanic
+1017,P1780164887743_6193,visible,excited,lexical,proximal,0,1,44,Male,White,Non-Hispanic
+1017,P1780164887743_6193,visible,scared,cause,proximal,0,1,44,Male,White,Non-Hispanic
+1017,P1780164887743_6193,visible,scared,lexical,proximal,0,1,44,Male,White,Non-Hispanic
+800,P1780164171291_4618,visible,excited,cause,proximal,0,1,73,Female,White,
+800,P1780164171291_4618,visible,excited,lexical,distal,1,0,73,Female,White,
+800,P1780164171291_4618,visible,scared,cause,proximal,0,1,73,Female,White,
+800,P1780164171291_4618,visible,scared,lexical,distal,1,0,73,Female,White,
+835,P1780164388226_9720,visible,excited,cause,proximal,0,1,42,Female,White,Non-Hispanic
+835,P1780164388226_9720,visible,excited,lexical,proximal,0,1,42,Female,White,Non-Hispanic
+835,P1780164388226_9720,visible,scared,cause,distal,1,0,42,Female,White,Non-Hispanic
+835,P1780164388226_9720,visible,scared,lexical,proximal,0,1,42,Female,White,Non-Hispanic
+788,P1780164146764_3502,visible,excited,cause,distal,1,0,39,Male,White,Non-Hispanic
+788,P1780164146764_3502,visible,excited,lexical,distal,1,0,39,Male,White,Non-Hispanic
+788,P1780164146764_3502,visible,scared,cause,distal,1,0,39,Male,White,Non-Hispanic
+788,P1780164146764_3502,visible,scared,lexical,distal,1,0,39,Male,White,Non-Hispanic
+1028,P1780164955490_659,visible,excited,cause,distal,1,0,21,Male,White,Non-Hispanic
+1028,P1780164955490_659,visible,excited,lexical,proximal,0,1,21,Male,White,Non-Hispanic
+1028,P1780164955490_659,visible,scared,cause,distal,1,0,21,Male,White,Non-Hispanic
+1028,P1780164955490_659,visible,scared,lexical,proximal,0,1,21,Male,White,Non-Hispanic
+823,P1780164285336_7344,visible,excited,cause,proximal,0,1,41,Female,White,Non-Hispanic
+823,P1780164285336_7344,visible,excited,lexical,proximal,0,1,41,Female,White,Non-Hispanic
+823,P1780164285336_7344,visible,scared,cause,distal,1,0,41,Female,White,Non-Hispanic
+823,P1780164285336_7344,visible,scared,lexical,distal,1,0,41,Female,White,Non-Hispanic
+827,P1780164304985_6046,visible,excited,cause,distal,1,0,34,Male,Black/African American,Non-Hispanic
+827,P1780164304985_6046,visible,excited,lexical,proximal,0,1,34,Male,Black/African American,Non-Hispanic
+827,P1780164304985_6046,visible,scared,cause,distal,1,0,34,Male,Black/African American,Non-Hispanic
+827,P1780164304985_6046,visible,scared,lexical,distal,1,0,34,Male,Black/African American,Non-Hispanic
+807,P1780164207060_8690,visible,excited,cause,distal,1,0,24,Male,other_race,Hispanic
+807,P1780164207060_8690,visible,excited,lexical,proximal,0,1,24,Male,other_race,Hispanic
+807,P1780164207060_8690,visible,scared,cause,distal,1,0,24,Male,other_race,Hispanic
+807,P1780164207060_8690,visible,scared,lexical,proximal,0,1,24,Male,other_race,Hispanic
+1075,P1780165572815_9105,visible,excited,cause,proximal,0,1,58,Female,White,Non-Hispanic
+1075,P1780165572815_9105,visible,excited,lexical,proximal,0,1,58,Female,White,Non-Hispanic
+1075,P1780165572815_9105,visible,scared,cause,proximal,0,1,58,Female,White,Non-Hispanic
+1075,P1780165572815_9105,visible,scared,lexical,proximal,0,1,58,Female,White,Non-Hispanic
+1194,P1780166296255_3957,visible,excited,cause,proximal,0,1,34,Male,Asian,Non-Hispanic
+1194,P1780166296255_3957,visible,excited,lexical,proximal,0,1,34,Male,Asian,Non-Hispanic
+1194,P1780166296255_3957,visible,scared,cause,distal,1,0,34,Male,Asian,Non-Hispanic
+1194,P1780166296255_3957,visible,scared,lexical,distal,1,0,34,Male,Asian,Non-Hispanic
+857,P1780164510381_166,visible,excited,cause,proximal,0,1,35,Female,White,Non-Hispanic
+857,P1780164510381_166,visible,excited,lexical,proximal,0,1,35,Female,White,Non-Hispanic
+857,P1780164510381_166,visible,scared,cause,distal,1,0,35,Female,White,Non-Hispanic
+857,P1780164510381_166,visible,scared,lexical,proximal,0,1,35,Female,White,Non-Hispanic
+1069,P1780165473246_2712,visible,excited,cause,proximal,0,1,43,Male,White,Non-Hispanic
+1069,P1780165473246_2712,visible,excited,lexical,proximal,0,1,43,Male,White,Non-Hispanic
+1069,P1780165473246_2712,visible,scared,cause,proximal,0,1,43,Male,White,Non-Hispanic
+1069,P1780165473246_2712,visible,scared,lexical,proximal,0,1,43,Male,White,Non-Hispanic
+781,P1780164135670_9474,visible,excited,cause,distal,1,0,27,Female,Black/African American,Non-Hispanic
+781,P1780164135670_9474,visible,excited,lexical,proximal,0,1,27,Female,Black/African American,Non-Hispanic
+781,P1780164135670_9474,visible,scared,cause,distal,1,0,27,Female,Black/African American,Non-Hispanic
+781,P1780164135670_9474,visible,scared,lexical,proximal,0,1,27,Female,Black/African American,Non-Hispanic
+919,P1780164634555_966,visible,excited,cause,distal,1,0,28,Non-binary,White,Non-Hispanic
+919,P1780164634555_966,visible,excited,lexical,proximal,0,1,28,Non-binary,White,Non-Hispanic
+919,P1780164634555_966,visible,scared,cause,distal,1,0,28,Non-binary,White,Non-Hispanic
+919,P1780164634555_966,visible,scared,lexical,distal,1,0,28,Non-binary,White,Non-Hispanic
+1047,P1780165123861_7804,visible,excited,cause,proximal,0,1,32,Female,White,Non-Hispanic
+1047,P1780165123861_7804,visible,excited,lexical,proximal,0,1,32,Female,White,Non-Hispanic
+1047,P1780165123861_7804,visible,scared,cause,distal,1,0,32,Female,White,Non-Hispanic
+1047,P1780165123861_7804,visible,scared,lexical,proximal,0,1,32,Female,White,Non-Hispanic
+779,P1780164135607_7401,visible,excited,cause,proximal,0,1,32,Male,White,Non-Hispanic
+779,P1780164135607_7401,visible,excited,lexical,proximal,0,1,32,Male,White,Non-Hispanic
+779,P1780164135607_7401,visible,scared,cause,distal,1,0,32,Male,White,Non-Hispanic
+779,P1780164135607_7401,visible,scared,lexical,proximal,0,1,32,Male,White,Non-Hispanic
+850,P1780164502714_7143,visible,excited,cause,proximal,0,1,46,Male,Black/African American,Non-Hispanic
+850,P1780164502714_7143,visible,excited,lexical,proximal,0,1,46,Male,Black/African American,Non-Hispanic
+850,P1780164502714_7143,visible,scared,cause,proximal,0,1,46,Male,Black/African American,Non-Hispanic
+850,P1780164502714_7143,visible,scared,lexical,proximal,0,1,46,Male,Black/African American,Non-Hispanic
+786,P1780164145692_1705,visible,excited,cause,proximal,0,1,42,Female,other_race,Hispanic
+786,P1780164145692_1705,visible,excited,lexical,proximal,0,1,42,Female,other_race,Hispanic
+786,P1780164145692_1705,visible,scared,cause,proximal,0,1,42,Female,other_race,Hispanic
+786,P1780164145692_1705,visible,scared,lexical,proximal,0,1,42,Female,other_race,Hispanic
+1076,P1780165611801_5064,visible,excited,cause,distal,1,0,46,Male,Black/African American,
+1076,P1780165611801_5064,visible,excited,lexical,proximal,0,1,46,Male,Black/African American,
+1076,P1780165611801_5064,visible,scared,cause,distal,1,0,46,Male,Black/African American,
+1076,P1780165611801_5064,visible,scared,lexical,proximal,0,1,46,Male,Black/African American,
+791,P1780164147183_5227,visible,excited,cause,distal,1,0,27,Male,White,Non-Hispanic
+791,P1780164147183_5227,visible,excited,lexical,distal,1,0,27,Male,White,Non-Hispanic
+791,P1780164147183_5227,visible,scared,cause,distal,1,0,27,Male,White,Non-Hispanic
+791,P1780164147183_5227,visible,scared,lexical,proximal,0,1,27,Male,White,Non-Hispanic
+774,P1780164125497_4116,visible,excited,cause,proximal,0,1,51,Male,White,Non-Hispanic
+774,P1780164125497_4116,visible,excited,lexical,proximal,0,1,51,Male,White,Non-Hispanic
+774,P1780164125497_4116,visible,scared,cause,distal,1,0,51,Male,White,Non-Hispanic
+774,P1780164125497_4116,visible,scared,lexical,proximal,0,1,51,Male,White,Non-Hispanic
+789,P1780164147432_767,visible,excited,cause,distal,1,0,42,Male,White,Non-Hispanic
+789,P1780164147432_767,visible,excited,lexical,proximal,0,1,42,Male,White,Non-Hispanic
+789,P1780164147432_767,visible,scared,cause,proximal,0,1,42,Male,White,Non-Hispanic
+789,P1780164147432_767,visible,scared,lexical,proximal,0,1,42,Male,White,Non-Hispanic
+803,P1780164219032_1910,visible,excited,cause,distal,1,0,36,Male,Black/African American,
+803,P1780164219032_1910,visible,excited,lexical,proximal,0,1,36,Male,Black/African American,
+803,P1780164219032_1910,visible,scared,cause,distal,1,0,36,Male,Black/African American,
+803,P1780164219032_1910,visible,scared,lexical,distal,1,0,36,Male,Black/African American,
+1202,P1780166316412_5461,visible,excited,cause,distal,1,0,25,Female,Black/African American,Non-Hispanic
+1202,P1780166316412_5461,visible,excited,lexical,proximal,0,1,25,Female,Black/African American,Non-Hispanic
+1202,P1780166316412_5461,visible,scared,cause,proximal,0,1,25,Female,Black/African American,Non-Hispanic
+1202,P1780166316412_5461,visible,scared,lexical,proximal,0,1,25,Female,Black/African American,Non-Hispanic
+780,P1780164133921_3890,visible,excited,cause,proximal,0,1,59,Female,other_race,Non-Hispanic
+780,P1780164133921_3890,visible,excited,lexical,proximal,0,1,59,Female,other_race,Non-Hispanic
+780,P1780164133921_3890,visible,scared,cause,distal,1,0,59,Female,other_race,Non-Hispanic
+780,P1780164133921_3890,visible,scared,lexical,proximal,0,1,59,Female,other_race,Non-Hispanic
+829,P1780164317813_3752,visible,excited,cause,distal,1,0,46,Female,other_race,Non-Hispanic
+829,P1780164317813_3752,visible,excited,lexical,proximal,0,1,46,Female,other_race,Non-Hispanic
+829,P1780164317813_3752,visible,scared,cause,distal,1,0,46,Female,other_race,Non-Hispanic
+829,P1780164317813_3752,visible,scared,lexical,proximal,0,1,46,Female,other_race,Non-Hispanic
+1013,P1780164858780_4425,visible,excited,cause,distal,1,0,36,Female,Asian,Non-Hispanic
+1013,P1780164858780_4425,visible,excited,lexical,distal,1,0,36,Female,Asian,Non-Hispanic
+1013,P1780164858780_4425,visible,scared,cause,distal,1,0,36,Female,Asian,Non-Hispanic
+1013,P1780164858780_4425,visible,scared,lexical,distal,1,0,36,Female,Asian,Non-Hispanic
+782,P1780164140312_3564,visible,excited,cause,distal,1,0,35,Female,Asian,Non-Hispanic
+782,P1780164140312_3564,visible,excited,lexical,proximal,0,1,35,Female,Asian,Non-Hispanic
+782,P1780164140312_3564,visible,scared,cause,distal,1,0,35,Female,Asian,Non-Hispanic
+782,P1780164140312_3564,visible,scared,lexical,proximal,0,1,35,Female,Asian,Non-Hispanic
+909,P1780164622782_8085,visible,excited,cause,distal,1,0,20,Male,White,Non-Hispanic
+909,P1780164622782_8085,visible,excited,lexical,proximal,0,1,20,Male,White,Non-Hispanic
+909,P1780164622782_8085,visible,scared,cause,distal,1,0,20,Male,White,Non-Hispanic
+909,P1780164622782_8085,visible,scared,lexical,proximal,0,1,20,Male,White,Non-Hispanic
+828,P1780164308412_8666,visible,excited,cause,proximal,0,1,43,Female,Black/African American,Non-Hispanic
+828,P1780164308412_8666,visible,excited,lexical,proximal,0,1,43,Female,Black/African American,Non-Hispanic
+828,P1780164308412_8666,visible,scared,cause,proximal,0,1,43,Female,Black/African American,Non-Hispanic
+828,P1780164308412_8666,visible,scared,lexical,proximal,0,1,43,Female,Black/African American,Non-Hispanic
+775,P1780164128147_7958,visible,excited,cause,distal,1,0,36,Female,White,Non-Hispanic
+775,P1780164128147_7958,visible,excited,lexical,proximal,0,1,36,Female,White,Non-Hispanic
+775,P1780164128147_7958,visible,scared,cause,distal,1,0,36,Female,White,Non-Hispanic
+775,P1780164128147_7958,visible,scared,lexical,proximal,0,1,36,Female,White,Non-Hispanic
+841,P1780164411662_4166,visible,excited,cause,distal,1,0,63,Female,White,Non-Hispanic
+841,P1780164411662_4166,visible,excited,lexical,distal,1,0,63,Female,White,Non-Hispanic
+841,P1780164411662_4166,visible,scared,cause,distal,1,0,63,Female,White,Non-Hispanic
+841,P1780164411662_4166,visible,scared,lexical,distal,1,0,63,Female,White,Non-Hispanic
+822,P1780164285368_9851,visible,excited,cause,distal,1,0,34,Male,White,
+822,P1780164285368_9851,visible,excited,lexical,proximal,0,1,34,Male,White,
+822,P1780164285368_9851,visible,scared,cause,distal,1,0,34,Male,White,
+822,P1780164285368_9851,visible,scared,lexical,proximal,0,1,34,Male,White,
+804,P1780164183921_7680,visible,excited,cause,distal,1,0,54,,Asian,Non-Hispanic
+804,P1780164183921_7680,visible,excited,lexical,proximal,0,1,54,,Asian,Non-Hispanic
+804,P1780164183921_7680,visible,scared,cause,distal,1,0,54,,Asian,Non-Hispanic
+804,P1780164183921_7680,visible,scared,lexical,proximal,0,1,54,,Asian,Non-Hispanic
+787,P1780164145371_831,visible,excited,cause,proximal,0,1,38,Female,White,Non-Hispanic
+787,P1780164145371_831,visible,excited,lexical,distal,1,0,38,Female,White,Non-Hispanic
+787,P1780164145371_831,visible,scared,cause,proximal,0,1,38,Female,White,Non-Hispanic
+787,P1780164145371_831,visible,scared,lexical,distal,1,0,38,Female,White,Non-Hispanic
+817,P1780164388609_9894,visible,excited,cause,proximal,0,1,21,Male,Black/African American,
+817,P1780164388609_9894,visible,excited,lexical,proximal,0,1,21,Male,Black/African American,
+817,P1780164388609_9894,visible,scared,cause,proximal,0,1,21,Male,Black/African American,
+817,P1780164388609_9894,visible,scared,lexical,proximal,0,1,21,Male,Black/African American,
+1072,P1780165539503_9964,visible,excited,cause,proximal,0,1,23,Male,White,Non-Hispanic
+1072,P1780165539503_9964,visible,excited,lexical,proximal,0,1,23,Male,White,Non-Hispanic
+1072,P1780165539503_9964,visible,scared,cause,proximal,0,1,23,Male,White,Non-Hispanic
+1072,P1780165539503_9964,visible,scared,lexical,proximal,0,1,23,Male,White,Non-Hispanic
