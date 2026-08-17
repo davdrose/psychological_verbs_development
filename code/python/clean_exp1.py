@@ -5,12 +5,12 @@ Merge the raw Proliferate export for Experiment 1 (between-subjects: causal vs.
 psychological verbs, drum + balloon scenarios) into a single tidy long-format
 CSV for analysis in code/R/.
 
-Raw input : data/exp1/  (the 7 split CSVs from a Proliferate "what_happened" query)
-Output    : data/exp1_clean.csv
+Raw input : data/experiment1/adults/raw/  (split CSVs from a Proliferate "what_happened" query)
+Output    : data/experiment1/adults/exp1_adults.csv
 
 Long format: one row per participant x scenario x question, with the chosen
 response coded as distal / proximal (0/1), following the example-repo convention
-(cf. data/exp1_child_clean.csv in cause_fault_dev).
+(cf. the *_clean.csv files in cause_fault_dev).
 
 Note on conditions:
   - control      shows causal verbs  -> balloon: "pop",  drum: "break"
@@ -29,8 +29,8 @@ from pathlib import Path
 import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
-RAW_DIR = REPO / "data" / "exp1"
-OUT_FILE = REPO / "data" / "exp1_adult_clean.csv"
+RAW_DIR = REPO / "data" / "experiment1" / "adults" / "raw"
+OUT_FILE = REPO / "data" / "experiment1" / "adults" / "exp1_adults.csv"
 
 # response column name in responses.csv, keyed by condition -> (scenario, question)
 RESPONSE_MAP = {

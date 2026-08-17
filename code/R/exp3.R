@@ -5,7 +5,8 @@
 # Collapses across the two scenarios (children: scared/surprised;
 # adults: scared/excited -- the same two scenarios under different labels).
 #
-# Reads  : ../../data/exp3_adult_clean.csv, ../../data/exp3_child_clean.csv
+# Reads  : ../../data/experiment3/adults/exp3_adults.csv,
+#          ../../data/experiment3/children/exp3_children.csv
 # Writes : ../../figures/exp3/exp3_development.{pdf,png}
 #
 # Run from code/R/ :   Rscript exp3.R
@@ -21,8 +22,8 @@ prep <- function(f) {
                              levels = c("caused", "lexical")))
 }
 
-child <- prep("../../data/exp3_child_clean.csv")
-adult <- prep("../../data/exp3_adult_clean.csv")
+child <- prep("../../data/experiment3/children/exp3_children.csv")
+adult <- prep("../../data/experiment3/adults/exp3_adults.csv")
 
 p <- plot_dev(child, adult, facet = NULL,
               title = "Exp 3: scared vs. surprised",

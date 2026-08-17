@@ -4,8 +4,8 @@ clean_exp3.py
 Merge the raw Proliferate export for Experiment 3 (scared vs. excited; a single
 condition) into a tidy long-format CSV for analysis in code/R/.
 
-Raw input : data/exp3/  (split CSVs from a Proliferate "what_happened" query)
-Output    : data/exp3_clean.csv
+Raw input : data/experiment3/adults/raw/  (split CSVs from a Proliferate "what_happened" query)
+Output    : data/experiment3/adults/exp3_adults.csv
 
 Design:
   - single condition (no between-subjects manipulation)
@@ -24,8 +24,8 @@ import sys
 import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
-RAW_DIR = REPO / "data" / "exp3"
-OUT_FILE = REPO / "data" / "exp3_adult_clean.csv"
+RAW_DIR = REPO / "data" / "experiment3" / "adults" / "raw"
+OUT_FILE = REPO / "data" / "experiment3" / "adults" / "exp3_adults.csv"
 
 # response columns use "excited"; relabel it "surprised" to match the children data
 SCENARIOS = ["excited", "scared"]

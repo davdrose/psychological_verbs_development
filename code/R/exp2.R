@@ -2,7 +2,8 @@
 # Experiment 2 — absence scenarios: physical vs. mental domain
 # Combined children (by age) + adults developmental figure.
 #
-# Reads  : ../../data/exp2_adult_clean.csv, ../../data/exp2_child_clean.csv
+# Reads  : ../../data/experiment2/adults/exp2_adults.csv,
+#          ../../data/experiment2/children/exp2_children.csv
 # Writes : ../../figures/exp2/exp2_development.{pdf,png}
 #
 # Run from code/R/ :   Rscript exp2.R
@@ -21,8 +22,8 @@ prep <- function(f) {
            condition = factor(condition, levels = c("physical", "mental")))
 }
 
-child <- prep("../../data/exp2_child_clean.csv")
-adult <- prep("../../data/exp2_adult_clean.csv")
+child <- prep("../../data/experiment2/children/exp2_children.csv")
+adult <- prep("../../data/experiment2/adults/exp2_adults.csv")
 
 facet_labels <- c(physical = "Physical", mental = "Mental")
 

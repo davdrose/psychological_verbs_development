@@ -12,8 +12,9 @@ Shared code sourced by the per-experiment scripts:
 
 ## `exp1.R`, `exp2.R`, `exp3.R`
 
-Each reads `../../data/expN_adult_clean.csv` and `../../data/expN_child_clean.csv`
-and saves `../../figures/expN/expN_development.{pdf,png}`.
+Each reads `../../data/experimentN/adults/expN_adults.csv` and
+`../../data/experimentN/children/expN_children.csv` and saves
+`../../figures/expN/expN_development.{pdf,png}`.
 
 - **exp1** — faceted Control (causal verbs) vs. Experimental (psych verbs).
 - **exp2** — faceted Physical vs. Mental (absence scenarios).

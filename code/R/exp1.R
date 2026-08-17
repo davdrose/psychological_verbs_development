@@ -2,7 +2,8 @@
 # Experiment 1 — causal vs. psychological verbs (drum & balloon)
 # Combined children (by age) + adults developmental figure.
 #
-# Reads  : ../../data/exp1_adult_clean.csv, ../../data/exp1_child_clean.csv
+# Reads  : ../../data/experiment1/adults/exp1_adults.csv,
+#          ../../data/experiment1/children/exp1_children.csv
 # Writes : ../../figures/exp1/exp1_development.{pdf,png}
 #
 # Run from code/R/ :   Rscript exp1.R
@@ -21,8 +22,8 @@ prep <- function(f) {
            condition = factor(condition, levels = c("control", "experimental")))
 }
 
-child <- prep("../../data/exp1_child_clean.csv")
-adult <- prep("../../data/exp1_adult_clean.csv")
+child <- prep("../../data/experiment1/children/exp1_children.csv")
+adult <- prep("../../data/experiment1/adults/exp1_adults.csv")
 
 facet_labels <- c(control      = "Control (causal verbs: break / pop)",
                   experimental = "Experimental (psych verbs: angry / sad)")

@@ -5,12 +5,10 @@ Parse the Lookit / Children Helping Science response exports for the three
 children experiments into anonymized long-format CSVs for analysis in code/R/.
 
 Raw input (identifiable, NOT committed -- see .gitignore):
-    data/Join-Adventures-with-drums-and-balloons-_all-responses-identifiable.json   (exp1)
-    data/Join-Adventures-with-Amy--Ben--and-other-friends-_all-responses-identifiable.json (exp2)
-    data/Join-Adventures-with-Robots-and-Clowns-_all-responses-identifiable.json    (exp3)
+    data/experimentN/children/Join-Adventures-*_all-responses-identifiable.json
 
 Output (anonymized):
-    data/exp1_child_clean.csv, data/exp2_child_clean.csv, data/exp3_child_clean.csv
+    data/experimentN/children/expN_children.csv
 
 Only de-identified fields are written: Lookit's hashed child id, the rounded
 age, gender, and the experimental factors / responses. No names, birthdates, or
@@ -83,7 +81,8 @@ def child_condition(exp, per_child_conditions):
 
 
 def parse_experiment(exp):
-    data = json.loads((DATA / FILES[exp]).read_text(encoding="utf-8"))
+    exp_dir = DATA / f"experiment{exp[3:]}" / "children"
+    data = json.loads((exp_dir / FILES[exp]).read_text(encoding="utf-8"))
     out_rows = []
     n_sessions = n_incomplete = n_excluded_both = n_excluded_age = n_dup = 0
     seen = set()
@@ -164,7 +163,7 @@ def parse_experiment(exp):
                 "gender": child.get("gender", ""),
             })
 
-    out_file = DATA / f"{exp}_child_clean.csv"
+    out_file = exp_dir / f"{exp}_children.csv"
     with out_file.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNS)
         w.writeheader()

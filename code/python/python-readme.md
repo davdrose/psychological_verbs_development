@@ -4,12 +4,13 @@ Data-cleaning / preprocessing scripts.
 
 ## Adults — `clean_exp1.py`, `clean_exp2.py`, `clean_exp3.py`
 
-Merge each experiment's raw Proliferate export (`data/expN/`) into a tidy
-long-format `data/expN_adult_clean.csv` (one row per participant × scenario ×
-question; response coded `distal` / `proximal`, 0/1).
+Merge each experiment's raw Proliferate export (`data/experimentN/adults/raw/`)
+into a tidy long-format `data/experimentN/adults/expN_adults.csv` (one row per
+participant × scenario × question; response coded `distal` / `proximal`, 0/1).
 
 - **exp1** — control response columns come from the main `-responses.csv`; the
-  experimental responses are merged in from `data/exp1/drums_experimental_responses.csv`.
+  experimental responses are merged in from
+  `data/experiment1/adults/raw/drums_experimental_responses.csv`.
 - **exp2 / exp3** — uniform response columns (`{scenario}_{question}`).
 - exp2/exp3 drop duplicate `workerid` submissions (keep first) and print which.
 
@@ -18,7 +19,8 @@ Run: `python code/python/clean_expN.py` (works from any directory). Requires `pa
 ## Children — `parse_children.py`
 
 Parses the three Lookit / CHS response exports into anonymized long-format
-`data/expN_child_clean.csv` (adds `age_days`, `age_years`, `age_group`, `gender`).
+`data/experimentN/children/expN_children.csv` (adds `age_days`, `age_years`,
+`age_group`, `gender`).
 
 - Choice images are always (left = distal, right = proximal), so `response` 0 → distal.
 - A session is kept if the child **answered all test questions** (Lookit's `completed`

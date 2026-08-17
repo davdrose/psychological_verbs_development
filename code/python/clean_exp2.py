@@ -4,8 +4,8 @@ clean_exp2.py
 Merge the raw Proliferate export for Experiment 2 (absence scenarios; physical
 vs. mental domain) into a single tidy long-format CSV for analysis in code/R/.
 
-Raw input : data/exp2/  (split CSVs from a Proliferate "what_happened" query)
-Output    : data/exp2_clean.csv
+Raw input : data/experiment2/adults/raw/  (split CSVs from a Proliferate "what_happened" query)
+Output    : data/experiment2/adults/exp2_adults.csv
 
 Design:
   - condition (between-subjects): "physical" | "mental"  (which absence domain)
@@ -24,8 +24,8 @@ import sys
 import pandas as pd
 
 REPO = Path(__file__).resolve().parents[2]
-RAW_DIR = REPO / "data" / "exp2"
-OUT_FILE = REPO / "data" / "exp2_adult_clean.csv"
+RAW_DIR = REPO / "data" / "experiment2" / "adults" / "raw"
+OUT_FILE = REPO / "data" / "experiment2" / "adults" / "exp2_adults.csv"
 
 SCENARIOS = ["hurt", "shock"]
 QUESTIONS = ["cause", "lexical"]
