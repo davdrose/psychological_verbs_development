@@ -9,16 +9,23 @@ Each experiment lives in its own folder so we always have a record of exactly wh
 
 ```
 experiments/
-├── experiment1/          # causal vs. psychological verbs (drum & balloon), between-subjects
+├── experiment1/          # absence scenarios: physical vs. mental (hurt / shock)
 │   ├── children/
 │   └── adults/
-├── experiment2/          # physical vs. mental scenarios (shock / hurt)
+├── experiment2/          # causal vs. psychological verbs (drum & balloon), between-subjects
 │   ├── children/
 │   └── adults/
 └── experiment3/          # scared vs. surprised
     ├── children/
     └── adults/
 ```
+
+> **Note on internal file names.** The experiment folders are numbered by their
+> order in the paper (experiment1 = absence, experiment2 = verbs). Some code files
+> inside still carry the original run/pilot numbering (e.g. the absence study's
+> `jspsych/psych_verb_exp2_chs.js` and its `children_pilot1_psych_verb_exp2/`
+> hosting URL live under `experiment1/`). Those internal names / CDN URLs are left
+> unchanged so the hosted media keeps resolving.
 
 ## Children folder layout
 
@@ -58,10 +65,10 @@ Each `experimentN/adults/` folder is a self-contained jsPsych experiment. Open `
 - `convert_data_to_csv.py` — converts the collected Proliferate data export to CSV. *(helper; may later move to `code/python/`.)*
 - `get_image_size.py` — small dev utility for checking image dimensions.
 
-Experiment 1 (between-subjects) has two condition subfolders instead of a single flat experiment:
+Experiment 2 (between-subjects) has two condition subfolders instead of a single flat experiment:
 
 ```
-experiment1/adults/
+experiment2/adults/
 ├── control/          # causal verbs   (break / pop)      — index.html + js/ + images/
 ├── experimental/     # psychological verbs (angry / sad) — index.html + js/ + images/
 ├── convert_data_to_csv.py
@@ -74,13 +81,21 @@ The adults folders were pulled from the working repo `causal_verb_experiments`:
 
 | experiment | source folder | notes |
 |---|---|---|
-| experiment1/adults | `experiment3_pilot6_betweensubject` | kept `control/` + `experimental/`; an earlier single-condition (`condition_type = "present"`) top-level version was dropped |
-| experiment2/adults | `experiment4_absence_physical_v3` | copied as-is |
+| experiment1/adults | `experiment4_absence_physical_v3` | copied as-is |
+| experiment2/adults | `experiment3_pilot6_betweensubject` | kept `control/` + `experimental/`; an earlier single-condition (`condition_type = "present"`) top-level version was dropped |
 | experiment3/adults | `experiment5_scare_surprise_v3` | copied as-is |
 
 ---
 
-## Experiment 1 — causal vs. psychological verbs (drum & balloon)
+## Experiment 1 — physical vs. mental scenarios (absence)
+
+**Scenarios:** `physical_shock`, `physical_hurt`, `mental_shock`, `mental_hurt`.
+
+**Counterbalancing (8 conditions):** domain (physical first | mental first) × scenario order within domain (shock first | hurt first) × question order (lexical first | caused first).
+
+Each scenario runs as: `test_case_intro` → scenario video → 2 questions. Each question shows a question video / prompt alongside the distal/proximal choice images.
+
+## Experiment 2 — causal vs. psychological verbs (drum & balloon)
 
 **Design:** between-subjects. Each participant sees **both** scenarios (drum + balloon) and answers 2 questions per scenario.
 
@@ -89,21 +104,13 @@ The adults folders were pulled from the working repo `causal_verb_experiments`:
 
 **Within-subject counterbalancing (4 conditions per group):** scenario order (drum first | balloon first) × question order (caused first | lexical first). In the children version, groups are balanced via CHS `chs.conditions`; in the adults version, the two groups are the `control/` and `experimental/` subfolders.
 
-## Experiment 2 — physical vs. mental scenarios
-
-**Scenarios:** `physical_shock`, `physical_hurt`, `mental_shock`, `mental_hurt`.
-
-**Counterbalancing (8 conditions):** domain (physical first | mental first) × scenario order within domain (shock first | hurt first) × question order (lexical first | caused first).
-
-Each scenario runs as: `test_case_intro` → scenario video → 2 questions. Each question shows a question video / prompt alongside the distal/proximal choice images.
-
 ## Experiment 3 — scared vs. surprised
 
 **Scenarios:** `scared`, `surprised`.
 
 **Counterbalancing (4 conditions):** scenario order (scared first | surprised first) × question order (lexical first | caused first).
 
-Each scenario runs as: `test_case_intro` → scenario video → 2 questions, with the same question / choice-image layout as Experiment 2.
+Each scenario runs as: `test_case_intro` → scenario video → 2 questions, with the same question / choice-image layout as Experiment 1.
 
 ---
 

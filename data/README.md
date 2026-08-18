@@ -26,33 +26,34 @@ identifiable and are git-ignored; only the anonymized `expN_children.csv` (hashe
 child id, rounded age, gender, factors and responses — no names, birthdates, or
 test dates) are committed. Keep the raw JSONs locally to re-run the parser.
 
-## Experiment 1 — causal vs. psychological verbs (drum & balloon)
+## Experiment 1 — absence scenarios (non-psychological vs. psychological)
 
 ### adults
 
-Contains `exp1_adults.csv` (trial + demographic data). Between-subjects:
+Contains `exp1_adults.csv`. Between-subjects `condition` = physical / mental
+(shown as non-psychological / psychological in the figures); scenarios hurt /
+shock. Three duplicate `workerid` submissions are removed (keeping each
+participant's first submission).
+
+### children
+
+Contains `exp1_children.csv` (still being collected).
+
+## Experiment 2 — causal vs. psychological verbs (drum & balloon)
+
+### adults
+
+Contains `exp2_adults.csv` (trial + demographic data). Between-subjects:
 `condition` = control (causal verbs break/pop) or experimental (psych verbs
 angry/sad). The `raw/` folder holds the Proliferate export; experimental
 responses were exported separately as `drums_experimental_responses.csv` and are
-merged in by `clean_exp1.py` (adult `workerid 1312` is missing from that export).
+merged in by `clean_exp2.py` (adult `workerid 1312` is missing from that export).
 
 ### children
 
-Contains `exp1_children.csv` (trial + demographic data). Between-subjects too
+Contains `exp2_children.csv` (trial + demographic data). Between-subjects too
 (verb type inferred from the verbs a child saw); children who saw all four verbs
 are excluded. ~30 children per condition per age group (3–9).
-
-## Experiment 2 — absence scenarios (physical vs. mental)
-
-### adults
-
-Contains `exp2_adults.csv`. Between-subjects `condition` = physical / mental;
-scenarios hurt / shock. Three duplicate `workerid` submissions are removed
-(keeping each participant's first submission).
-
-### children
-
-Contains `exp2_children.csv` (still being collected).
 
 ## Experiment 3 — scared vs. surprised
 

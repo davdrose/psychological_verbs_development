@@ -15,11 +15,11 @@ age, gender, and the experimental factors / responses. No names, birthdates, or
 test dates are carried over.
 
 Design (all between/​within established empirically):
-  - exp1  between-subjects verb type: control = causal verbs (pop/break),
+  - exp1  between-subjects domain: physical / mental; scenario hurt/shock.
+  - exp2  between-subjects verb type: control = causal verbs (pop/break),
           experimental = psychological verbs (sad/angry); scenario balloon/drum.
           A few children saw all four verbs (condition = "both") and are excluded
           from the between-subjects analysis.
-  - exp2  between-subjects domain: physical / mental; scenario hurt/shock.
   - exp3  single condition; scenario scared/surprised.
 
 Choice images are always (left=distal, right=proximal), so response 0 -> distal,
@@ -36,8 +36,8 @@ REPO = Path(__file__).resolve().parents[2]
 DATA = REPO / "data"
 
 FILES = {
-    "exp1": "Join-Adventures-with-drums-and-balloons-_all-responses-identifiable.json",
-    "exp2": "Join-Adventures-with-Amy--Ben--and-other-friends-_all-responses-identifiable.json",
+    "exp1": "Join-Adventures-with-Amy--Ben--and-other-friends-_all-responses-identifiable.json",
+    "exp2": "Join-Adventures-with-drums-and-balloons-_all-responses-identifiable.json",
     "exp3": "Join-Adventures-with-Robots-and-Clowns-_all-responses-identifiable.json",
 }
 
@@ -45,8 +45,8 @@ COLUMNS = ["experiment", "child_id", "condition", "scenario", "verb",
            "question", "response", "distal", "proximal",
            "age_days", "age_years", "age_group", "gender"]
 
-# causal verbs -> control, psychological verbs -> experimental (exp1)
-EXP1_VERB_CONDITION = {"pop": "control", "break": "control",
+# causal verbs -> control, psychological verbs -> experimental (exp2)
+EXP2_VERB_CONDITION = {"pop": "control", "break": "control",
                        "sad": "experimental", "angry": "experimental"}
 
 
@@ -54,11 +54,11 @@ def parse_trial(exp, video):
     """Return (condition_hint, scenario, verb, question) from a test-trial video name."""
     parts = video.split("_")
     question = "cause" if parts[-1] == "caused" else parts[-1]   # caused -> cause
-    if exp == "exp1":
+    if exp == "exp2":
         # balloon_pop_caused -> scenario=balloon, verb=pop
         scenario, verb = parts[0], parts[1]
-        return EXP1_VERB_CONDITION.get(verb, ""), scenario, verb, question
-    if exp == "exp2":
+        return EXP2_VERB_CONDITION.get(verb, ""), scenario, verb, question
+    if exp == "exp1":
         # physical_shock_lexical -> domain=physical, scenario=shock
         domain, scenario = parts[0], parts[1]
         return domain, scenario, "", question
@@ -69,13 +69,13 @@ def parse_trial(exp, video):
 def child_condition(exp, per_child_conditions):
     """Collapse a child's per-trial condition hints to a single condition."""
     conds = set(per_child_conditions)
-    if exp == "exp1":
+    if exp == "exp2":
         if conds == {"control"}:
             return "control"
         if conds == {"experimental"}:
             return "experimental"
         return "both"          # saw both verb types -> excluded downstream
-    if exp == "exp2":
+    if exp == "exp1":
         return conds.pop() if len(conds) == 1 else "both"
     return "all"
 

@@ -10,18 +10,13 @@ COLUMNS = [
     "participant_id",
     "condition",
     "scenario_order",
-    "balloon_question_order",
-    "drum_question_order",
-    # Balloon scenario responses
-    "balloon_pop",
-    "balloon_cause_pop",
-    "balloon_sad",
-    "balloon_cause_sad",
-    # Drum scenario responses
-    "drum_break",
-    "drum_cause_break",
-    "drum_anger",
-    "drum_cause_anger",
+    "question_order",
+    # Hurt scenario responses
+    "hurt_cause",
+    "hurt_lexical",
+    # Shock scenario responses
+    "shock_cause",
+    "shock_lexical",
     # Demographics
     "age",
     "race",
@@ -58,31 +53,23 @@ def main():
             responses = rec.get("responses", {}) or {}
             participants = rec.get("participants", {}) or {}
             scenario_order = rec.get("scenario_order", [])
-            question_orders = rec.get("question_orders", {}) or {}
+            question_order = rec.get("question_order", [])
             
-            # Convert scenario_order list to string (e.g., "balloon,drum")
+            # Convert scenario_order list to string (e.g., "hurt,shock")
             scenario_order_str = ",".join(scenario_order) if scenario_order else ""
-            
-            # Convert question orders to strings
-            balloon_q_order_str = ",".join(question_orders.get("balloon", [])) if "balloon" in question_orders else ""
-            drum_q_order_str = ",".join(question_orders.get("drum", [])) if "drum" in question_orders else ""
+            question_order_str = ",".join(question_order) if question_order else ""
 
             row = {
                 "participant_id": rec.get("participant_id", ""),
                 "condition": rec.get("condition", ""),
                 "scenario_order": scenario_order_str,
-                "balloon_question_order": balloon_q_order_str,
-                "drum_question_order": drum_q_order_str,
-                # Balloon scenario responses
-                "balloon_pop": responses.get("balloon_pop", ""),
-                "balloon_cause_pop": responses.get("balloon_cause_pop", ""),
-                "balloon_sad": responses.get("balloon_sad", ""),
-                "balloon_cause_sad": responses.get("balloon_cause_sad", ""),
-                # Drum scenario responses
-                "drum_break": responses.get("drum_break", ""),
-                "drum_cause_break": responses.get("drum_cause_break", ""),
-                "drum_anger": responses.get("drum_anger", ""),
-                "drum_cause_anger": responses.get("drum_cause_anger", ""),
+                "question_order": question_order_str,
+                # Hurt scenario responses
+                "hurt_cause": responses.get("hurt_cause", ""),
+                "hurt_lexical": responses.get("hurt_lexical", ""),
+                # Shock scenario responses
+                "shock_cause": responses.get("shock_cause", ""),
+                "shock_lexical": responses.get("shock_lexical", ""),
                 # Demographics
                 "age": participants.get("age", ""),
                 "race": participants.get("race", ""),

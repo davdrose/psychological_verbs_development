@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────
-# Experiment 2 — absence scenarios: physical vs. mental domain
+# Experiment 1 — causal vs. psychological verbs (drum & balloon)
 # Combined children (by age) + adults developmental figure.
 #
 # Reads  : ../../data/experiment2/adults/exp2_adults.csv,
@@ -15,22 +15,22 @@ prep <- function(f) {
   read_csv(f, show_col_types = FALSE) %>%
     mutate(distal = as.numeric(distal)) %>%
     filter(!is.na(distal),
-           condition %in% c("physical", "mental"),
+           condition %in% c("control", "experimental"),
            question %in% c("cause", "lexical")) %>%
     mutate(question  = factor(recode(question, cause = "caused"),
                               levels = c("caused", "lexical")),
-           condition = factor(condition, levels = c("physical", "mental")))
+           condition = factor(condition, levels = c("control", "experimental")))
 }
 
 child <- prep("../../data/experiment2/children/exp2_children.csv")
 adult <- prep("../../data/experiment2/adults/exp2_adults.csv")
 
-facet_labels <- c(physical = "non-psychological", mental = "psychological")
+facet_labels <- c(control = "non-psychological", experimental = "psychological")
 
 p <- plot_dev(child, adult, facet = "condition", facet_labels = facet_labels,
-              title = "Exp 2: non-psychological vs. psychological (absence scenarios)",
-              y_lab = "absence or direct cause",
-              pole_high = "absence", pole_low = "direct")
+              title = "Exp 2: non-psychological vs. psychological verbs (between-subjects)",
+              y_lab = "distal or proximal cause",
+              pole_high = "distal", pole_low = "proximal")
 
 ggsave("../../figures/exp2/exp2_development.pdf", p, height = 5.6, width = 13)
 ggsave("../../figures/exp2/exp2_development.png", p, height = 5.6, width = 13, dpi = 150)
