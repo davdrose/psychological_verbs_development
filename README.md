@@ -1,6 +1,4 @@
-# Psychological verbs and the development of causal language
-
-<!-- TODO: replace with the final paper title and add a one-line subtitle if desired. -->
+# How Children Map Psychological Verbs to Different Causes
 
 This repository contains the experiments, data, analyses, and figures for a
 developmental project on how **children (ages 3–9) and adults** map different
@@ -10,8 +8,6 @@ outcome, a **causal / "caused"** question ("who *caused* it?") tends to pick out
 *broke* it?", "who *scared* her?") can pick out a more **proximal / direct** cause.
 We ask how this mapping differs for **non-psychological vs. psychological** verbs
 and scenarios, and how it changes across development.
-
-<!-- TODO: add preprint / OSF project link, e.g.  Preprint: https://osf.io/...  -->
 
 ## Repository structure
 
@@ -40,14 +36,11 @@ Each experiment is archived in its own folder under
 what it looked like when it was run — see the
 [experiments README](code/experiments/README.md) for full designs.
 
-| # | Experiment | Between-subjects condition | Scenarios | Pre-registration |
-|---|---|---|---|---|
-| 1 | **Absence** scenarios | non-psychological / psychological (physical / mental) | hurt, shock | [adults](#) · [children](#) <!-- TODO: OSF links --> |
-| 2 | **Verbs** (causal vs. psychological), between-subjects | non-psychological / psychological (control / experimental) | drum, balloon | [adults](#) · [children](#) <!-- TODO: OSF links --> |
-| 3 | **Scared vs. surprised** | — (single condition) | scared, surprised | [adults](#) · [children](#) <!-- TODO: OSF links --> |
-
-> **⚠️ Pre-registration links are placeholders (`#`).** Replace them with the OSF
-> pre-registration URLs for each experiment/population.
+| # | Experiment | Between-subjects condition | Scenarios |
+|---|---|---|---|
+| 1 | **Absence** scenarios | non-psychological / psychological (physical / mental) | hurt, shock |
+| 2 | **Verbs** (causal vs. psychological), between-subjects | non-psychological / psychological (control / experimental) | drum, balloon |
+| 3 | **Scared vs. surprised** | — (single condition) | scared, surprised |
 
 ## Reproducing the analysis
 

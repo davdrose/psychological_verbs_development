@@ -8,11 +8,11 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 
-theme_set(theme_minimal(base_size = 14))
+theme_set(theme_minimal(base_size = 16))
 
 # question colours / shapes (match the reference repo: caused = red, lexical = blue)
 Q_COLS   <- c(caused = "#dc3410", lexical = "#377EB8")
-Q_SHAPES <- c(caused = 16, lexical = 17)          # filled circle / filled triangle
+Q_SHAPES <- c(caused = 21, lexical = 24)          # fillable circle / triangle (black outline)
 ADULT_X  <- 10.4                                  # x position for the "Adults" column
 
 # percentile bootstrap mean + 95% CI
@@ -68,40 +68,44 @@ plot_dev <- function(child, adult, facet = NULL, facet_labels = NULL,
   # at the bottom (y = proportion choosing the distal/high-pole cause).
   y_labels <- c(paste0("100%\n", pole_low), "75%", "50%", "75%", paste0("100%\n", pole_high))
 
+  dodge <- position_dodge(width = .5)
   p <- ggplot() +
     geom_hline(yintercept = .5, linetype = "dashed", colour = "grey45") +
     # smooth developmental trend (children only), logistic GLM
     geom_smooth(data = child_age,
                 aes(x = age_years, y = distal, colour = question, fill = question),
                 method = "glm", method.args = list(family = binomial),
-                se = TRUE, alpha = .15, linewidth = 1, show.legend = FALSE) +
+                se = TRUE, alpha = .15, linewidth = 1.2, show.legend = FALSE) +
     # per-age and adult means +/- bootstrapped 95% CI
-    geom_pointrange(data = pts,
-                    aes(x = x, y = mean, ymin = low, ymax = high,
-                        colour = question, shape = question),
-                    position = position_dodge(width = .5),
-                    size = .55, linewidth = .75) +
+    geom_linerange(data = pts,
+                   aes(x = x, ymin = low, ymax = high, colour = question),
+                   position = dodge, linewidth = 1) +
+    geom_point(data = pts,
+               aes(x = x, y = mean, fill = question, shape = question),
+               position = dodge, size = 4.6, stroke = .8, colour = "black") +
     # n labels along the bottom
     geom_text(data = n_lab, aes(x = x, y = -0.12, label = paste0("n=", n)),
-              size = 3.4, colour = "grey35") +
-    scale_colour_manual(values = Q_COLS) +
+              size = 4.4, colour = "grey35") +
+    scale_colour_manual(values = Q_COLS, guide = "none") +
     scale_fill_manual(values = Q_COLS) +
     scale_shape_manual(values = Q_SHAPES) +
     scale_x_continuous(breaks = x_breaks, labels = x_labs, limits = c(2.6, 10.9)) +
     scale_y_continuous(breaks = c(0, .25, .5, .75, 1), labels = y_labels,
                        expand = expansion(mult = c(0, .02))) +
     coord_cartesian(ylim = c(-0.15, 1), clip = "off") +
-    labs(x = "Age (years)", y = y_lab, colour = "Question", shape = "Question",
+    labs(x = "Age (years)", y = y_lab, fill = "Question", shape = "Question",
          title = title) +
+    guides(shape = guide_legend(override.aes = list(size = 8, stroke = .9))) +
     theme(legend.position = "bottom",
-          plot.title = element_text(face = "bold", size = 17, hjust = 0),
+          plot.title = element_text(face = "bold", size = 20, hjust = 0),
           plot.title.position = "plot",
-          strip.text = element_text(size = 15, face = "bold"),
-          axis.title = element_text(size = 15),
-          axis.text = element_text(size = 13),
+          strip.text = element_text(size = 18, face = "bold"),
+          axis.title = element_text(size = 18),
+          axis.text = element_text(size = 16),
           axis.text.y = element_text(lineheight = 0.9),
-          legend.text = element_text(size = 13),
-          legend.title = element_text(size = 13),
+          legend.text = element_text(size = 17),
+          legend.title = element_text(size = 17),
+          legend.key.size = unit(1.6, "lines"),
           panel.grid.minor = element_blank(),
           panel.grid.major = element_line(colour = "grey90"),
           panel.spacing = unit(1.5, "lines"))
