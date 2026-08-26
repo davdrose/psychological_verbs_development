@@ -89,6 +89,8 @@ The adults folders were pulled from the working repo `causal_verb_experiments`:
 
 ## Experiment 1 — physical vs. mental scenarios (absence)
 
+**Pre-registration:** [adults](https://osf.io/dxah8/) · [children](https://osf.io/a9e8r/)
+
 **Scenarios:** `physical_shock`, `physical_hurt`, `mental_shock`, `mental_hurt`.
 
 **Counterbalancing (8 conditions):** domain (physical first | mental first) × scenario order within domain (shock first | hurt first) × question order (lexical first | caused first).
@@ -96,6 +98,8 @@ The adults folders were pulled from the working repo `causal_verb_experiments`:
 Each scenario runs as: `test_case_intro` → scenario video → 2 questions. Each question shows a question video / prompt alongside the distal/proximal choice images.
 
 ## Experiment 2 — causal vs. psychological verbs (drum & balloon)
+
+**Pre-registration:** [adults](https://osf.io/42pdh/) · [children](https://osf.io/jknyr/)
 
 **Design:** between-subjects. Each participant sees **both** scenarios (drum + balloon) and answers 2 questions per scenario.
 
@@ -105,6 +109,8 @@ Each scenario runs as: `test_case_intro` → scenario video → 2 questions. Eac
 **Within-subject counterbalancing (4 conditions per group):** scenario order (drum first | balloon first) × question order (caused first | lexical first). In the children version, groups are balanced via CHS `chs.conditions`; in the adults version, the two groups are the `control/` and `experimental/` subfolders.
 
 ## Experiment 3 — scared vs. surprised
+
+**Pre-registration:** [adults](https://osf.io/g7dcy/) · [children](https://osf.io/hjxe6/)
 
 **Scenarios:** `scared`, `surprised`.
 

@@ -38,11 +38,11 @@ Each experiment is archived in its own folder under
 what it looked like when it was run — see the
 [experiments README](code/experiments/README.md) for full designs.
 
-| # | Experiment | Between-subjects condition | Scenarios |
-|---|---|---|---|
-| 1 | **Absence** scenarios | non-psychological / psychological (physical / mental) | hurt, shock |
-| 2 | **Verbs** (causal vs. psychological), between-subjects | non-psychological / psychological (control / experimental) | drum, balloon |
-| 3 | **Scared vs. surprised** | — (single condition) | scared, surprised |
+| # | Experiment | Between-subjects condition | Scenarios | Pre-registration |
+|---|---|---|---|---|
+| 1 | **Absence** scenarios | non-psychological / psychological (physical / mental) | hurt, shock | [adults](https://osf.io/dxah8/) · [children](https://osf.io/a9e8r/) |
+| 2 | **Verbs** (causal vs. psychological), between-subjects | non-psychological / psychological (control / experimental) | drum, balloon | [adults](https://osf.io/42pdh/) · [children](https://osf.io/jknyr/) |
+| 3 | **Scared vs. surprised** | — (single condition) | scared, surprised | [adults](https://osf.io/g7dcy/) · [children](https://osf.io/hjxe6/) |
 
 ## Reproducing the analysis
 
