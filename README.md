@@ -9,6 +9,8 @@ outcome, a **causal / "caused"** question ("who *caused* it?") tends to pick out
 We ask how this mapping differs for **non-psychological vs. psychological** verbs
 and scenarios, and how it changes across development.
 
+📦 **OSF project** (materials, data, and pre-registrations): https://osf.io/4u7as/
+
 ## Repository structure
 
 ```
